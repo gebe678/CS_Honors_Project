@@ -1,0 +1,27 @@
+Refer to honors thesis guide on git/vsummet
+
+mostly experimental thesis with minor engineering for the code aspect of the project
+
+start with the lit review portion of the experimental thesis
+
+make connections between the literature and my research
+why does this research help me?
+what is the connection between the research I am working on and the literature I am reading?
+
+Bibtex - latex bibliography managment system
+automatically creates a .bib file for the bibliography and generates it.
+
+Latex code:
+	Title: \cite[entry]
+cit summary:
+
+Use the ACM format large trim single format Academic Journal template in overleaf for the paper
+get used to the format they use for this type of paper
+create some sample stuff and play around with the latex code
+
+Set up overleaf projects for the summary or create one large project and break it down into subsections for the summaries and for the different parts of the final paper.
+
+Create 2 or 3 article summaries from the bibliography I already have
+Start with the research articles for the summaries.
+
+Focus on the questions the research addresses and the results they found in the article. Do not get overwhelmed with the methodoligies they use to find the results.
