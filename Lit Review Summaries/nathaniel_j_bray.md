@@ -1,0 +1,3 @@
+## **This is the Lit Review paragraph for the THE IMPACT OF REGISTRATION TIMING ON STUDENT PERFORMANCE**
+
+This paper studies the outcomes of student learning based on registration times of the students. This study found a positive cooraliation between early student registration and strong acedimic performance and course completion. To find these results the study uses registration data from three different community colleges in Mississippi. Registration data was collected from all three schools. Different schools had different registration times. After analyzing the data the study found that the students with earlier registration times had higher grades than studnets who registered later.
