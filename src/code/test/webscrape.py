@@ -43,10 +43,13 @@ def parseData():
     """
     This function uses beautiful soup to parse the data from the page
     """
-
+    # gets the html data from the url's in the urls.txt file
     html_data = getHtmlFromFile("urls.txt")
+
+    # create a new Beautiful Soup object called soup that parsed the data from the first url
     soup = bs(html_data[0], "html.parser")
 
+    # get the body of the html
     body = soup.select_one("body")
 
     print(body)
