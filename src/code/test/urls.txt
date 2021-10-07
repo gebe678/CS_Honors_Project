@@ -1,16 +1,8 @@
-# fall 2018
-https://foxlink.rollins.edu/prod/pkg_display_schedule.p_get_rschedule_fall?i_term_code=201809&i_campus_code=R
-# spring 2019
-https://foxlink.rollins.edu/prod/pkg_display_schedule.p_get_rschedule_spring?i_term_code=201901&i_campus_code=R
-# fall 2019
-https://foxlink.rollins.edu/prod/pkg_display_schedule.p_get_rschedule_fall?i_term_code=201909&i_campus_code=R
-# spring 2019
-https://foxlink.rollins.edu/prod/pkg_display_schedule.p_get_rschedule_spring?i_term_code=202001&i_campus_code=R
-# fall 2020
-https://foxlink.rollins.edu/prod/pkg_display_schedule.p_get_rschedule_fall?i_term_code=202009&i_campus_code=R
-#spring 2020
-https://foxlink.rollins.edu/prod/pkg_display_schedule.p_get_rschedule_spring?i_term_code=202101&i_campus_code=R
-# fall 2021
-https://foxlink.rollins.edu/prod/pkg_display_schedule.p_get_rschedule_fall?i_term_code=202109&i_campus_code=R
-#spring 2022
-https://foxlink.rollins.edu/prod/pkg_display_schedule.p_get_rschedule_spring?i_term_code=202201&i_campus_code=R
+../../../data/html_files/College of Liberal Arts Schedule of Classes Fall 2018.html
+../../../data/html_files/College of Liberal Arts Schedule of Classes Spring 2019.html
+../../../data/html_files/College of Liberal Arts Schedule of Classes Fall 2019.html
+../../../data/html_files/College of Liberal Arts Schedule of Classes Spring 2020.html
+../../../data/html_files/College of Liberal Arts Schedule of Classes Fall 2020.html
+../../../data/html_files/College of Liberal Arts Schedule of Classes Spring 2021.html
+../../../data/html_files/College of Liberal Arts Schedule of Classes Fall 2021.html
+../../../data/html_files/College of Liberal Arts Schedule of Classes Spring 2022.html
