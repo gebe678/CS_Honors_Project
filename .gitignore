@@ -2,3 +2,5 @@
 
 data/
 restricted/
+
+test/project_files/__pycache__
