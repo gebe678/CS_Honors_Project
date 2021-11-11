@@ -3,4 +3,4 @@
 data/
 restricted/
 
-src/test/project_files/__pycache__
+src/test/project_files/__pycache__/
