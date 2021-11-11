@@ -69,8 +69,6 @@ def create_student_objects(data):
         # add revelant course information to the student object
         student.add_classes(initial_classes, registered_classes)
 
-        print(student.student_id, " ", student.calculate_dropped_classes())
-
         # add the student to a list of student objects
         students.append(student)
 
@@ -81,7 +79,24 @@ def create_class_registration_objects(data):
     registration_list = []
     registration_classes = data[1]
 
-    reg = Registration()
+    # replace the nan values in the dataframe with NaN (type string)
+    for (columnName, columnValues) in registration_classes.iteritems():
+        registration_classes[columnName].fillna("NaN", inplace=True)
+
+    for i in range(len(registration_classes.index)):
+
+        data = registration_classes.loc[i]
+        
+        reg = Registration()
+
+        reg.set_term_code(data["Term_Code"])
+        reg.set_crn_key(data["CRN_Key"])
+        reg.set_subject_code(data["SUBJ_CODE"])
+        reg.set_course_number(data["CRSE_NUMB"])
+        reg.set_section_number(data["Section Number"])
+        reg.set_credit_hours(data["CREDIT_HRS"])
+
+        registration_list.append(reg)
 
     return registration_list
 
