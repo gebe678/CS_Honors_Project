@@ -41,7 +41,8 @@ def create_class_registration_objects(data):
         reg.set_section_number(data["Section Number"])
         reg.set_credit_hours(data["CREDIT_HRS"])
 
-        registration_dict[reg.get_crn_key()] = reg
+        if reg not in registration_dict:
+            registration_dict[reg.get_crn_key(),reg.get_term_code()] = reg
 
     return registration_dict
 
@@ -66,32 +67,33 @@ def create_student_objects(data):
         initial_classes = []
         registered_classes = []
 
-        # get the intial classes from the row
-        if data["Reg_Jul15_Course__1"] != "NaN": initial_classes.append(classes[data["Reg_Jul15_Course__1"]])
-        if data["Reg_Jul15_Course__2"] != "NaN": initial_classes.append(classes[data["Reg_Jul15_Course__2"]])
-        if data["Reg_Jul15_Course__3"] != "NaN": initial_classes.append(classes[data["Reg_Jul15_Course__3"]])
-        if data["Reg_Jul15_Course__4"] != "NaN": initial_classes.append(classes[data["Reg_Jul15_Course__4"]])
-        if data["Reg_Jul15_Course__5"] != "NaN": initial_classes.append(classes[data["Reg_Jul15_Course__5"]])
-        if data["Reg_Jul15_Course__6"] != "NaN": initial_classes.append(classes[data["Reg_Jul15_Course__6"]])
-        if data["Reg_Jul15_Course__7"] != "NaN": initial_classes.append(classes[data["Reg_Jul15_Course__7"]])
-
-        # get the registered classes from the row
-        if data["Reg_15days_after_start_of_term_Course_1"] != "NaN" : registered_classes.append(classes[data["Reg_15days_after_start_of_term_Course_1"]])
-        if data["Reg_15days_after_start_of_term_Course_2"] != "NaN" : registered_classes.append(classes[data["Reg_15days_after_start_of_term_Course_2"]])
-        if data["Reg_15days_after_start_of_term_Course_3"] != "NaN" : registered_classes.append(classes[data["Reg_15days_after_start_of_term_Course_3"]])
-        if data["Reg_15days_after_start_of_term_Course_4"] != "NaN" : registered_classes.append(classes[data["Reg_15days_after_start_of_term_Course_4"]])
-        if data["Reg_15days_after_start_of_term_Course_5"] != "NaN" : registered_classes.append(classes[data["Reg_15days_after_start_of_term_Course_5"]])
-        if data["Reg_15days_after_start_of_term_Course_6"] != "NaN" : registered_classes.append(classes[data["Reg_15days_after_start_of_term_Course_6"]])
-        if data["Reg_15days_after_start_of_term_Course_7"] != "NaN" : registered_classes.append(classes[data["Reg_15days_after_start_of_term_Course_7"]])
-        if data["Reg_15days_after_start_of_term_Course_8"] != "NaN" : registered_classes.append(classes[data["Reg_15days_after_start_of_term_Course_8"]])
-        if data["Reg_15days_after_start_of_term_Course_9"] != "NaN" : registered_classes.append(classes[data["Reg_15days_after_start_of_term_Course_9"]])
-        if data["Reg_15days_after_start_of_term_Course_10"] != "NaN" : registered_classes.append(classes[data["Reg_15days_after_start_of_term_Course_10"]])
-
         # create a student object
         student = Student()
 
         # set the students unique id
         student.set_student_id(data["Student_key"])
+        student.set_term(data["Term"])
+
+        # get the intial classes from the row
+        if data["Reg_Jul15_Course__1"] != "NaN": initial_classes.append(classes[data["Reg_Jul15_Course__1"],student.get_term()])
+        if data["Reg_Jul15_Course__2"] != "NaN": initial_classes.append(classes[data["Reg_Jul15_Course__2"],student.get_term()])
+        if data["Reg_Jul15_Course__3"] != "NaN": initial_classes.append(classes[data["Reg_Jul15_Course__3"],student.get_term()])
+        if data["Reg_Jul15_Course__4"] != "NaN": initial_classes.append(classes[data["Reg_Jul15_Course__4"],student.get_term()])
+        if data["Reg_Jul15_Course__5"] != "NaN": initial_classes.append(classes[data["Reg_Jul15_Course__5"],student.get_term()])
+        if data["Reg_Jul15_Course__6"] != "NaN": initial_classes.append(classes[data["Reg_Jul15_Course__6"],student.get_term()])
+        if data["Reg_Jul15_Course__7"] != "NaN": initial_classes.append(classes[data["Reg_Jul15_Course__7"],student.get_term()])
+
+        # get the registered classes from the row
+        if data["Reg_15days_after_start_of_term_Course_1"] != "NaN" : registered_classes.append(classes[data["Reg_15days_after_start_of_term_Course_1"],student.get_term()])
+        if data["Reg_15days_after_start_of_term_Course_2"] != "NaN" : registered_classes.append(classes[data["Reg_15days_after_start_of_term_Course_2"],student.get_term()])
+        if data["Reg_15days_after_start_of_term_Course_3"] != "NaN" : registered_classes.append(classes[data["Reg_15days_after_start_of_term_Course_3"],student.get_term()])
+        if data["Reg_15days_after_start_of_term_Course_4"] != "NaN" : registered_classes.append(classes[data["Reg_15days_after_start_of_term_Course_4"],student.get_term()])
+        if data["Reg_15days_after_start_of_term_Course_5"] != "NaN" : registered_classes.append(classes[data["Reg_15days_after_start_of_term_Course_5"],student.get_term()])
+        if data["Reg_15days_after_start_of_term_Course_6"] != "NaN" : registered_classes.append(classes[data["Reg_15days_after_start_of_term_Course_6"],student.get_term()])
+        if data["Reg_15days_after_start_of_term_Course_7"] != "NaN" : registered_classes.append(classes[data["Reg_15days_after_start_of_term_Course_7"],student.get_term()])
+        if data["Reg_15days_after_start_of_term_Course_8"] != "NaN" : registered_classes.append(classes[data["Reg_15days_after_start_of_term_Course_8"],student.get_term()])
+        if data["Reg_15days_after_start_of_term_Course_9"] != "NaN" : registered_classes.append(classes[data["Reg_15days_after_start_of_term_Course_9"],student.get_term()])
+        if data["Reg_15days_after_start_of_term_Course_10"] != "NaN" : registered_classes.append(classes[data["Reg_15days_after_start_of_term_Course_10"],student.get_term()])
 
         # add revelant course information to the student object
         student.add_classes(initial_classes, registered_classes)
@@ -102,7 +104,10 @@ def create_student_objects(data):
     # return all of the students for analysis
     return students
 
-def main(files):
+def calculate_class_percentages(files):
+    """
+    This function calculates the percentage of students who dropped a class and the percentage of classes students kept with and without the rcc classes
+    """
     data_frames = read_csv_data(files)
     students = create_student_objects(data_frames)
 
@@ -133,6 +138,23 @@ def main(files):
     print("dropped class percentage: ", students_dropped_classes / total_students)
     print("kept classes percentage with RCC ", statistics.mean(kept_classes_list_rcc))
     print("kept classes percentage without RCC ", statistics.mean(kept_classes_list_no_rcc))
+
+def calculate_credit_hours(files):
+    data_frames = read_csv_data(files)
+    students = create_student_objects(data_frames)
+
+    credit_hours_pre = []
+    credit_hours_post = []
+
+    for student in students:
+        credit_hours_pre.append(student.calculate_credit_hours_pre())
+        credit_hours_post.append(student.calculate_credit_hours_post())
+
+    # create a histogram for the number of student credit hours kept buckets 10 buckets
+
+def main(files):
+    calculate_class_percentages(files)
+    calculate_credit_hours(files)
 
 if __name__ == "__main__":
 

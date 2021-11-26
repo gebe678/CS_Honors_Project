@@ -3,12 +3,12 @@
 class Registration:
 
     def __init__(self):
-        self.term_code = 0
         self.crn_key = 0
         self.subject_code = 0
         self.course_number = 0
         self.section_number = 0
         self.credit_hours = 0
+        self.course_year = 0
 
     ######################################################################################################################################################################################
     # GETTERS AND SETTERS #

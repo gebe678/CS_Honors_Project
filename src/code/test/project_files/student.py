@@ -8,6 +8,7 @@ class Student:
         self.registration_classes = []
         
         self.student_id = 0
+        self.term = 0
 
     ######################################################################################################################################################################################
     # GETTERS AND SETTERS #
@@ -34,6 +35,12 @@ class Student:
 
     def get_student_id(self):
         return self.student_id
+
+    def set_term(self, term):
+        self.term = term
+
+    def get_term(self):
+        return self.term
 
     #####################################################################################################################################################################################
 
@@ -84,4 +91,25 @@ class Student:
                 total_kept_courses += 1
 
         return total_kept_courses / total_courses
+
+    def calculate_credit_hours_pre(self):
+        num_credit_hours = 0
+        initial_classes = self.initial_classes
+        
+        for course in initial_classes:
+            assert isinstance(course, Registration), "Expected a registration object"
+
+            num_credit_hours += float(course.get_credit_hours())
+
+        return num_credit_hours
+
+    def calculate_credit_hours_post(self):
+        num_credit_hours = 0
+
+        for course in self.registration_classes:
+            assert isinstance(course, Registration), "Expected a registration object"
+
+            num_credit_hours += float(course.get_credit_hours())
+
+        return num_credit_hours
 
