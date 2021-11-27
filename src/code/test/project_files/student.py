@@ -58,6 +58,20 @@ class Student:
         
         return num_classes_dropped
 
+    def calculate_faculity_chosen_classes(self):
+
+        registration_classes = self.registration_classes
+        initial_classes = self.initial_classes
+
+        num_classes_chosen = 0
+        num_classes = len(registration_classes)
+
+        for reg_class in registration_classes:
+            if reg_class in initial_classes:
+                num_classes_chosen += 1
+
+        return num_classes_chosen / num_classes
+
     def calculate_kept_class_percentage(self, rcc_analysis):
         """
         This function is responsible for finding out what percentage of classes this student kept
@@ -112,4 +126,7 @@ class Student:
             num_credit_hours += float(course.get_credit_hours())
 
         return num_credit_hours
+
+    def get_registered_classes(self):
+        return len(self.initial_classes)
 

@@ -115,6 +115,7 @@ def calculate_class_percentages(files):
     dropped_classes_list  = []
     kept_classes_list_rcc = []
     kept_classes_list_no_rcc = []
+    faculity_chosen_class_percentage = []
     students_dropped_classes = 0
     total_students = len(students)
 
@@ -131,6 +132,7 @@ def calculate_class_percentages(files):
         dropped_classes_list.append(dropped_classes)
         kept_classes_list_rcc.append(kept_classes_rcc)
         kept_classes_list_no_rcc.append(kept_classes_no_rcc)
+        faculity_chosen_class_percentage.append(student.calculate_faculity_chosen_classes())
         
         if dropped_classes > 0:
             students_dropped_classes += 1
@@ -138,7 +140,10 @@ def calculate_class_percentages(files):
     print("dropped class percentage: ", students_dropped_classes / total_students)
     print("kept classes percentage with RCC ", statistics.mean(kept_classes_list_rcc))
     print("kept classes percentage without RCC ", statistics.mean(kept_classes_list_no_rcc))
+    print("Faculity chosen class percentage: ", statistics.mean(faculity_chosen_class_percentage))
 
+# This function is responsible for calculating the number of credit hours a student was registered for
+# before and after registration
 def calculate_credit_hours(files):
     data_frames = read_csv_data(files)
     students = create_student_objects(data_frames)
@@ -150,11 +155,47 @@ def calculate_credit_hours(files):
         credit_hours_pre.append(student.calculate_credit_hours_pre())
         credit_hours_post.append(student.calculate_credit_hours_post())
 
-    # create a histogram for the number of student credit hours kept buckets 10 buckets
+    # pre schedule change histogram
+    plt.figure(0)
+    plt.hist(credit_hours_pre, bins=20)
+    plt.xlabel("Number of Credit Hours")
+    plt.ylabel("Frequency")
+    plt.title("Number of Credit Hours Pre Schedule Change")
+    plt.savefig("credit_hours_pre_hist.pdf", bbox_inches="tight")
+
+    # post schedule change histogram
+    plt.figure(1)
+    plt.hist(credit_hours_post, bins=20)
+    plt.xlabel("Number of Credit Hours")
+    plt.ylabel("Frequency")
+    plt.title("Number of Credit Hours Post Schedule Change")
+    plt.savefig("credit_hours_post_hist.pdf", bbox_inches="tight")
+
+# This function is responsible for calculating the number of dropped classes for every student
+def calculate_dropped_classes(files):
+    data_frames = read_csv_data(files)
+    students = create_student_objects(data_frames)
+
+    dropped_class_ratio = []
+
+    for student in students:
+        registered_classes = student.get_registered_classes()
+        dropped_classes = student.calculate_dropped_classes()
+
+        if registered_classes > 0:
+            dropped_class_ratio.append(dropped_classes / registered_classes)
+
+    plt.figure(0)
+    plt.hist(dropped_class_ratio, bins=20)
+    plt.xlabel("Number of dropped classes")
+    plt.ylabel("Frequency")
+    plt.title("Number of dropped classes")
+    plt.savefig("num_dropped_classes_per_student_hist.pdf")
 
 def main(files):
     calculate_class_percentages(files)
-    calculate_credit_hours(files)
+    #calculate_credit_hours(files)
+    #calculate_dropped_classes(files)
 
 if __name__ == "__main__":
 
