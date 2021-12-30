@@ -171,6 +171,8 @@ def calculate_credit_hours(files):
     plt.title("Number of Credit Hours Post Schedule Change")
     plt.savefig("credit_hours_post_hist.pdf", bbox_inches="tight")
 
+    print("credit hour graph saved")
+
 # This function is responsible for calculating the number of dropped classes for every student
 def calculate_dropped_classes(files):
     data_frames = read_csv_data(files)
@@ -192,10 +194,25 @@ def calculate_dropped_classes(files):
     plt.title("Number of dropped classes")
     plt.savefig("num_dropped_classes_per_student_hist.pdf")
 
-def main(files):
+    print("dropped classes graph saved")
+
+def run_class_percentages(files, startyear, endyear):
+    print(startyear, " ", endyear)
     calculate_class_percentages(files)
+
+def run_credit_hours(files, startyear, endyear):
+    print(startyear, " ", endyear)
+    calculate_credit_hours(files)
+
+def run_dropped_classes(files, startyear, endyear):
+    print(startyear, " ", endyear)
+    calculate_dropped_classes(files)
+
+def main(files):
+    #calculate_class_percentages(files)
     #calculate_credit_hours(files)
     #calculate_dropped_classes(files)
+    run_dropped_classes(files)
 
 if __name__ == "__main__":
 
