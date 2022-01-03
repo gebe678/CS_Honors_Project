@@ -184,7 +184,8 @@ def calculate_credit_hours(files, startyear, endyear):
         plt.title("Number of Credit Hours Pre Schedule Change for years: " + str(startyear) + "-" + str(endyear))
     else:
         plt.title("Number of Credit Hours Pre Schedule Change for: " + str(startyear))
-    plt.savefig("credit_hours_pre_hist.pdf", bbox_inches="tight")
+    plt.show()
+    #plt.savefig("credit_hours_pre_hist.pdf", bbox_inches="tight")
 
     # post schedule change histogram
     plt.figure(1)
@@ -195,7 +196,8 @@ def calculate_credit_hours(files, startyear, endyear):
         plt.title("Number of Credit Hours Post Schedule Change for years: " + str(startyear) + "-" + str(endyear))
     else:
         plt.title("Number of Credit Hours Post Schedule Change for: " + str(startyear))
-    plt.savefig("credit_hours_post_hist.pdf", bbox_inches="tight")
+    plt.show()
+    #plt.savefig("credit_hours_post_hist.pdf", bbox_inches="tight")
 
     print("credit hour graph saved")
 
@@ -228,7 +230,8 @@ def calculate_dropped_classes(files, startyear, endyear):
         plt.title("Number of dropped classes for years: " + str(startyear) + "-" + str(endyear))
     else:
         plt.title("Number of dropped classes for: " + str(startyear))
-    plt.savefig("num_dropped_classes_per_student_hist.pdf")
+    plt.show()
+    #plt.savefig("num_dropped_classes_per_student_hist.pdf")
 
     print("dropped classes graph saved")
 
