@@ -46,12 +46,15 @@ def create_class_registration_objects(data):
 
     return registration_dict
 
-def create_student_objects(data):
+def create_student_objects(data, startyear, endyear):
     """
     This function is responsible for creating student objects for easy data gathering
     """
     students = []
     classes = create_class_registration_objects(data)
+
+    startyear = str(startyear) + "09"
+    endyear = str(endyear) + "09"
 
     student_course_data = data[0]
 
@@ -67,49 +70,58 @@ def create_student_objects(data):
         initial_classes = []
         registered_classes = []
 
-        # create a student object
-        student = Student()
+        # check to make sure the term is greater equal to the start term and less than the end term
+        if str(data["Term"]) >= startyear and str(data["Term"]) <= endyear:
 
-        # set the students unique id
-        student.set_student_id(data["Student_key"])
-        student.set_term(data["Term"])
+            # create a student object
+            student = Student()
 
-        # get the intial classes from the row
-        if data["Reg_Jul15_Course__1"] != "NaN": initial_classes.append(classes[data["Reg_Jul15_Course__1"],student.get_term()])
-        if data["Reg_Jul15_Course__2"] != "NaN": initial_classes.append(classes[data["Reg_Jul15_Course__2"],student.get_term()])
-        if data["Reg_Jul15_Course__3"] != "NaN": initial_classes.append(classes[data["Reg_Jul15_Course__3"],student.get_term()])
-        if data["Reg_Jul15_Course__4"] != "NaN": initial_classes.append(classes[data["Reg_Jul15_Course__4"],student.get_term()])
-        if data["Reg_Jul15_Course__5"] != "NaN": initial_classes.append(classes[data["Reg_Jul15_Course__5"],student.get_term()])
-        if data["Reg_Jul15_Course__6"] != "NaN": initial_classes.append(classes[data["Reg_Jul15_Course__6"],student.get_term()])
-        if data["Reg_Jul15_Course__7"] != "NaN": initial_classes.append(classes[data["Reg_Jul15_Course__7"],student.get_term()])
+            # set the students unique id
+            student.set_student_id(data["Student_key"])
+            student.set_term(data["Term"])
 
-        # get the registered classes from the row
-        if data["Reg_15days_after_start_of_term_Course_1"] != "NaN" : registered_classes.append(classes[data["Reg_15days_after_start_of_term_Course_1"],student.get_term()])
-        if data["Reg_15days_after_start_of_term_Course_2"] != "NaN" : registered_classes.append(classes[data["Reg_15days_after_start_of_term_Course_2"],student.get_term()])
-        if data["Reg_15days_after_start_of_term_Course_3"] != "NaN" : registered_classes.append(classes[data["Reg_15days_after_start_of_term_Course_3"],student.get_term()])
-        if data["Reg_15days_after_start_of_term_Course_4"] != "NaN" : registered_classes.append(classes[data["Reg_15days_after_start_of_term_Course_4"],student.get_term()])
-        if data["Reg_15days_after_start_of_term_Course_5"] != "NaN" : registered_classes.append(classes[data["Reg_15days_after_start_of_term_Course_5"],student.get_term()])
-        if data["Reg_15days_after_start_of_term_Course_6"] != "NaN" : registered_classes.append(classes[data["Reg_15days_after_start_of_term_Course_6"],student.get_term()])
-        if data["Reg_15days_after_start_of_term_Course_7"] != "NaN" : registered_classes.append(classes[data["Reg_15days_after_start_of_term_Course_7"],student.get_term()])
-        if data["Reg_15days_after_start_of_term_Course_8"] != "NaN" : registered_classes.append(classes[data["Reg_15days_after_start_of_term_Course_8"],student.get_term()])
-        if data["Reg_15days_after_start_of_term_Course_9"] != "NaN" : registered_classes.append(classes[data["Reg_15days_after_start_of_term_Course_9"],student.get_term()])
-        if data["Reg_15days_after_start_of_term_Course_10"] != "NaN" : registered_classes.append(classes[data["Reg_15days_after_start_of_term_Course_10"],student.get_term()])
+            # get the intial classes from the row
+            if data["Reg_Jul15_Course__1"] != "NaN": initial_classes.append(classes[data["Reg_Jul15_Course__1"],student.get_term()])
+            if data["Reg_Jul15_Course__2"] != "NaN": initial_classes.append(classes[data["Reg_Jul15_Course__2"],student.get_term()])
+            if data["Reg_Jul15_Course__3"] != "NaN": initial_classes.append(classes[data["Reg_Jul15_Course__3"],student.get_term()])
+            if data["Reg_Jul15_Course__4"] != "NaN": initial_classes.append(classes[data["Reg_Jul15_Course__4"],student.get_term()])
+            if data["Reg_Jul15_Course__5"] != "NaN": initial_classes.append(classes[data["Reg_Jul15_Course__5"],student.get_term()])
+            if data["Reg_Jul15_Course__6"] != "NaN": initial_classes.append(classes[data["Reg_Jul15_Course__6"],student.get_term()])
+            if data["Reg_Jul15_Course__7"] != "NaN": initial_classes.append(classes[data["Reg_Jul15_Course__7"],student.get_term()])
 
-        # add revelant course information to the student object
-        student.add_classes(initial_classes, registered_classes)
+            # get the registered classes from the row
+            if data["Reg_15days_after_start_of_term_Course_1"] != "NaN" : registered_classes.append(classes[data["Reg_15days_after_start_of_term_Course_1"],student.get_term()])
+            if data["Reg_15days_after_start_of_term_Course_2"] != "NaN" : registered_classes.append(classes[data["Reg_15days_after_start_of_term_Course_2"],student.get_term()])
+            if data["Reg_15days_after_start_of_term_Course_3"] != "NaN" : registered_classes.append(classes[data["Reg_15days_after_start_of_term_Course_3"],student.get_term()])
+            if data["Reg_15days_after_start_of_term_Course_4"] != "NaN" : registered_classes.append(classes[data["Reg_15days_after_start_of_term_Course_4"],student.get_term()])
+            if data["Reg_15days_after_start_of_term_Course_5"] != "NaN" : registered_classes.append(classes[data["Reg_15days_after_start_of_term_Course_5"],student.get_term()])
+            if data["Reg_15days_after_start_of_term_Course_6"] != "NaN" : registered_classes.append(classes[data["Reg_15days_after_start_of_term_Course_6"],student.get_term()])
+            if data["Reg_15days_after_start_of_term_Course_7"] != "NaN" : registered_classes.append(classes[data["Reg_15days_after_start_of_term_Course_7"],student.get_term()])
+            if data["Reg_15days_after_start_of_term_Course_8"] != "NaN" : registered_classes.append(classes[data["Reg_15days_after_start_of_term_Course_8"],student.get_term()])
+            if data["Reg_15days_after_start_of_term_Course_9"] != "NaN" : registered_classes.append(classes[data["Reg_15days_after_start_of_term_Course_9"],student.get_term()])
+            if data["Reg_15days_after_start_of_term_Course_10"] != "NaN" : registered_classes.append(classes[data["Reg_15days_after_start_of_term_Course_10"],student.get_term()])
 
-        # add the student to a list of student objects
-        students.append(student)
+            # add revelant course information to the student object
+            student.add_classes(initial_classes, registered_classes)
+
+            # add the student to a list of student objects
+            students.append(student)
 
     # return all of the students for analysis
     return students
 
-def calculate_class_percentages(files):
+def calculate_class_percentages(files, startyear, endyear):
     """
     This function calculates the percentage of students who dropped a class and the percentage of classes students kept with and without the rcc classes
     """
+    # if the endyear is smaller than the start year flip them
+    if endyear < startyear:
+        s = endyear
+        endyear = startyear
+        startyear = s
+
     data_frames = read_csv_data(files)
-    students = create_student_objects(data_frames)
+    students = create_student_objects(data_frames, startyear, endyear)
 
     # every entry is a student and each number represents the number of classes dropped
     dropped_classes_list  = []
@@ -137,6 +149,7 @@ def calculate_class_percentages(files):
         if dropped_classes > 0:
             students_dropped_classes += 1
     
+    print("For years: ", startyear, "-", endyear)
     print("dropped class percentage: ", students_dropped_classes / total_students)
     print("kept classes percentage with RCC ", statistics.mean(kept_classes_list_rcc))
     print("kept classes percentage without RCC ", statistics.mean(kept_classes_list_no_rcc))
@@ -144,9 +157,16 @@ def calculate_class_percentages(files):
 
 # This function is responsible for calculating the number of credit hours a student was registered for
 # before and after registration
-def calculate_credit_hours(files):
+def calculate_credit_hours(files, startyear, endyear):
+
+    # if the endyear is smaller than the start year flip them
+    if endyear < startyear:
+        s = endyear
+        endyear = startyear
+        startyear = s
+
     data_frames = read_csv_data(files)
-    students = create_student_objects(data_frames)
+    students = create_student_objects(data_frames, startyear, endyear)
 
     credit_hours_pre = []
     credit_hours_post = []
@@ -174,9 +194,16 @@ def calculate_credit_hours(files):
     print("credit hour graph saved")
 
 # This function is responsible for calculating the number of dropped classes for every student
-def calculate_dropped_classes(files):
+def calculate_dropped_classes(files, startyear, endyear):
+
+    # if the endyear is smaller than the start year flip them
+    if endyear < startyear:
+        s = endyear
+        endyear = startyear
+        startyear = s
+
     data_frames = read_csv_data(files)
-    students = create_student_objects(data_frames)
+    students = create_student_objects(data_frames, startyear, endyear)
 
     dropped_class_ratio = []
 
@@ -197,22 +224,19 @@ def calculate_dropped_classes(files):
     print("dropped classes graph saved")
 
 def run_class_percentages(files, startyear, endyear):
-    print(startyear, " ", endyear)
-    calculate_class_percentages(files)
+    calculate_class_percentages(files, startyear, endyear)
 
 def run_credit_hours(files, startyear, endyear):
-    print(startyear, " ", endyear)
-    calculate_credit_hours(files)
+    calculate_credit_hours(files, startyear, endyear)
 
 def run_dropped_classes(files, startyear, endyear):
-    print(startyear, " ", endyear)
-    calculate_dropped_classes(files)
+    calculate_dropped_classes(files, startyear, endyear)
 
 def main(files):
-    #calculate_class_percentages(files)
+    calculate_class_percentages(files, 2017, 2020)
     #calculate_credit_hours(files)
     #calculate_dropped_classes(files)
-    run_dropped_classes(files)
+    #run_dropped_classes(files)
 
 if __name__ == "__main__":
 
