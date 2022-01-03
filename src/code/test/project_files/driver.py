@@ -180,7 +180,10 @@ def calculate_credit_hours(files, startyear, endyear):
     plt.hist(credit_hours_pre, bins=20)
     plt.xlabel("Number of Credit Hours")
     plt.ylabel("Frequency")
-    plt.title("Number of Credit Hours Pre Schedule Change")
+    if startyear != endyear:
+        plt.title("Number of Credit Hours Pre Schedule Change for years: " + str(startyear) + "-" + str(endyear))
+    else:
+        plt.title("Number of Credit Hours Pre Schedule Change for: " + str(startyear))
     plt.savefig("credit_hours_pre_hist.pdf", bbox_inches="tight")
 
     # post schedule change histogram
@@ -188,7 +191,10 @@ def calculate_credit_hours(files, startyear, endyear):
     plt.hist(credit_hours_post, bins=20)
     plt.xlabel("Number of Credit Hours")
     plt.ylabel("Frequency")
-    plt.title("Number of Credit Hours Post Schedule Change")
+    if startyear != endyear:
+        plt.title("Number of Credit Hours Post Schedule Change for years: " + str(startyear) + "-" + str(endyear))
+    else:
+        plt.title("Number of Credit Hours Post Schedule Change for: " + str(startyear))
     plt.savefig("credit_hours_post_hist.pdf", bbox_inches="tight")
 
     print("credit hour graph saved")
@@ -218,7 +224,10 @@ def calculate_dropped_classes(files, startyear, endyear):
     plt.hist(dropped_class_ratio, bins=20)
     plt.xlabel("Number of dropped classes")
     plt.ylabel("Frequency")
-    plt.title("Number of dropped classes")
+    if startyear != endyear:
+        plt.title("Number of dropped classes for years: " + str(startyear) + "-" + str(endyear))
+    else:
+        plt.title("Number of dropped classes for: " + str(startyear))
     plt.savefig("num_dropped_classes_per_student_hist.pdf")
 
     print("dropped classes graph saved")
@@ -233,10 +242,9 @@ def run_dropped_classes(files, startyear, endyear):
     calculate_dropped_classes(files, startyear, endyear)
 
 def main(files):
-    calculate_class_percentages(files, 2017, 2020)
-    #calculate_credit_hours(files)
-    #calculate_dropped_classes(files)
-    #run_dropped_classes(files)
+    #calculate_class_percentages(files, 2017, 2020)
+    calculate_credit_hours(files, 2017, 2017)
+    calculate_dropped_classes(files, 2017, 2017)
 
 if __name__ == "__main__":
 
