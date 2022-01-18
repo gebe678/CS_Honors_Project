@@ -235,19 +235,19 @@ def calculate_dropped_classes(files, startyear, endyear):
 
     print("dropped classes graph saved")
 
-def run_class_percentages(files, startyear, endyear):
+def run_class_percentages(files, startyear = 2017, endyear = 2020):
     calculate_class_percentages(files, startyear, endyear)
 
-def run_credit_hours(files, startyear, endyear):
+def run_credit_hours(files, startyear = 2017, endyear = 2020):
     calculate_credit_hours(files, startyear, endyear)
 
-def run_dropped_classes(files, startyear, endyear):
+def run_dropped_classes(files, startyear = 2017, endyear = 2020):
     calculate_dropped_classes(files, startyear, endyear)
 
 def main(files):
-    #calculate_class_percentages(files, 2017, 2020)
-    calculate_credit_hours(files, 2017, 2017)
-    calculate_dropped_classes(files, 2017, 2017)
+    run_class_percentages(files, 2017, 2020)
+    run_credit_hours(files)
+    run_dropped_classes(files)
 
 if __name__ == "__main__":
 
