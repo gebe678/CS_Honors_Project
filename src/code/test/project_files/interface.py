@@ -32,7 +32,6 @@ def main():
 
     # create an option menu for the second dropdown
     endYearVar = tk.IntVar(window)
-    (window)
     endYearChoices = {2017, 2018, 2019, 2020}
     endYearVar.set(2018)
     
