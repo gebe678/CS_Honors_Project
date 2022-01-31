@@ -155,6 +155,42 @@ def calculate_class_percentages(files, startyear, endyear):
     print("kept classes percentage without RCC ", statistics.mean(kept_classes_list_no_rcc))
     print("Faculity chosen class percentage: ", statistics.mean(faculity_chosen_class_percentage))
 
+
+    # create histograms for the data
+    # kept class list percentage histogram
+    plt.figure(0)
+    plt.hist(kept_classes_list_rcc, bins=20)
+    plt.xlabel("Percentage of kept classes with RCC")
+    plt.ylabel("Number of students")
+    if startyear != endyear:
+        plt.title("Percentage of kept classes with RCC for: " + str(startyear) + "-" + str(endyear))
+    else:
+        plt.title("Percentage of kept classes with RCC for: " + str(startyear))
+    plt.show()
+
+    # pre schedule change histogram
+    plt.figure(1)
+    plt.hist(kept_classes_list_no_rcc, bins=20)
+    plt.xlabel("Percentage of kept classes without RCC")
+    plt.ylabel("Number of students")
+    if startyear != endyear:
+        plt.title("Percentage of kept classes without RCC for: " + str(startyear) + "-" + str(endyear))
+    else:
+        plt.title("Percentage of kept classes without RCC for: " + str(startyear))
+    plt.show()
+
+    # pre schedule change histogram
+    plt.figure(2)
+    plt.hist(faculity_chosen_class_percentage, bins=20)
+    plt.xlabel("Percentage of faculity chosen classes")
+    plt.ylabel("Number of students")
+    if startyear != endyear:
+        plt.title("Percentage of faculity chosen classes for: " + str(startyear) + "-" + str(endyear))
+    else:
+        plt.title("Percentage of faculity chosen classes for: " + str(startyear))
+    plt.show()
+    
+
 # This function is responsible for calculating the number of credit hours a student was registered for
 # before and after registration
 def calculate_credit_hours(files, startyear, endyear):
@@ -177,25 +213,25 @@ def calculate_credit_hours(files, startyear, endyear):
 
     # pre schedule change histogram
     plt.figure(0)
-    plt.hist(credit_hours_pre, bins=20)
+    plt.hist([credit_hours_pre, credit_hours_post], bins=20, histtype="bar", label=["credit hours pre registration", "credit hours post registration"])
     plt.xlabel("Number of Credit Hours")
-    plt.ylabel("Frequency")
+    plt.ylabel("Number of students")
     if startyear != endyear:
-        plt.title("Number of Credit Hours Pre Schedule Change for years: " + str(startyear) + "-" + str(endyear))
+        plt.title("Number of Credit Hours Pre and Post Schedule Change for: " + str(startyear) + "-" + str(endyear))
     else:
-        plt.title("Number of Credit Hours Pre Schedule Change for: " + str(startyear))
-    plt.show()
+        plt.title("Number of Credit Hours Pre and Post Schedule Change for: " + str(startyear))
     #plt.savefig("credit_hours_pre_hist.pdf", bbox_inches="tight")
 
     # post schedule change histogram
-    plt.figure(1)
-    plt.hist(credit_hours_post, bins=20)
-    plt.xlabel("Number of Credit Hours")
-    plt.ylabel("Frequency")
-    if startyear != endyear:
-        plt.title("Number of Credit Hours Post Schedule Change for years: " + str(startyear) + "-" + str(endyear))
-    else:
-        plt.title("Number of Credit Hours Post Schedule Change for: " + str(startyear))
+    # plt.figure(0)
+    # plt.hist(credit_hours_post, bins=20, histtype="bar")
+    # plt.xlabel("Number of Credit Hours")
+    # plt.ylabel("Frequency")
+    #if startyear != endyear:
+    #     plt.title("Number of Credit Hours Post Schedule Change for: " + str(startyear) + "-" + str(endyear))
+    # else:
+    #     plt.title("Number of Credit Hours Post Schedule Change for: " + str(startyear))
+    plt.legend(loc="upper left", prop={"size": "10"})
     plt.show()
     #plt.savefig("credit_hours_post_hist.pdf", bbox_inches="tight")
 
@@ -224,10 +260,10 @@ def calculate_dropped_classes(files, startyear, endyear):
 
     plt.figure(0)
     plt.hist(dropped_class_ratio, bins=20)
-    plt.xlabel("Number of dropped classes")
-    plt.ylabel("Frequency")
+    plt.xlabel("Percentage of dropped classes")
+    plt.ylabel("Number of students")
     if startyear != endyear:
-        plt.title("Number of dropped classes for years: " + str(startyear) + "-" + str(endyear))
+        plt.title("Number of dropped classes for: " + str(startyear) + "-" + str(endyear))
     else:
         plt.title("Number of dropped classes for: " + str(startyear))
     plt.show()
