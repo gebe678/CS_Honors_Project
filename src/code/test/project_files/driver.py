@@ -151,6 +151,7 @@ def calculate_class_percentages(files, startyear, endyear):
     
     print("For years: ", startyear, "-", endyear)
     print("dropped class percentage: ", students_dropped_classes / total_students)
+    print("dropped class percentage numbers: ", "num students dropped classes: ", students_dropped_classes, " total students: ", total_students)
     print("kept classes percentage with RCC ", statistics.mean(kept_classes_list_rcc))
     print("kept classes percentage without RCC ", statistics.mean(kept_classes_list_no_rcc))
     print("Faculity chosen class percentage: ", statistics.mean(faculity_chosen_class_percentage))
