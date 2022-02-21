@@ -101,6 +101,16 @@ def create_student_objects(data, startyear, endyear):
             if data["Reg_15days_after_start_of_term_Course_9"] != "NaN" : registered_classes.append(classes[data["Reg_15days_after_start_of_term_Course_9"],student.get_term()])
             if data["Reg_15days_after_start_of_term_Course_10"] != "NaN" : registered_classes.append(classes[data["Reg_15days_after_start_of_term_Course_10"],student.get_term()])
 
+            # remove all classes that have less than 2 credit hours from the initial classes
+            for course in initial_classes:
+                if str(course.get_credit_hours()).isdigit() and int(course.get_credit_hours()) < 4 and course in initial_classes:
+                    initial_classes.remove(course)
+            
+            # remove all classes that have less than 2 credit hours from the registered classes
+            for course in registered_classes:
+                if course.get_credit_hours != "NaN" and int(course.get_credit_hours()) < 4 and course in registered_classes:
+                    registered_classes.remove(course)
+
             # add revelant course information to the student object
             student.add_classes(initial_classes, registered_classes)
 
@@ -128,6 +138,7 @@ def calculate_class_percentages(files, startyear, endyear):
     kept_classes_list_rcc = []
     kept_classes_list_no_rcc = []
     faculity_chosen_class_percentage = []
+    faculity_chosen_class_percentage_no_rcc = []
     students_dropped_classes = 0
     total_students = len(students)
 
@@ -144,8 +155,9 @@ def calculate_class_percentages(files, startyear, endyear):
         dropped_classes_list.append(dropped_classes)
         kept_classes_list_rcc.append(kept_classes_rcc)
         kept_classes_list_no_rcc.append(kept_classes_no_rcc)
-        faculity_chosen_class_percentage.append(student.calculate_faculity_chosen_classes())
-        
+        faculity_chosen_class_percentage.append(student.calculate_faculity_chosen_classes(True))
+        faculity_chosen_class_percentage_no_rcc.append(student.calculate_faculity_chosen_classes(False))
+
         if dropped_classes > 0:
             students_dropped_classes += 1
     
@@ -154,8 +166,8 @@ def calculate_class_percentages(files, startyear, endyear):
     print("dropped class percentage numbers: ", "num students dropped classes: ", students_dropped_classes, " total students: ", total_students)
     print("kept classes percentage with RCC ", statistics.mean(kept_classes_list_rcc))
     print("kept classes percentage without RCC ", statistics.mean(kept_classes_list_no_rcc))
-    print("Faculity chosen class percentage: ", statistics.mean(faculity_chosen_class_percentage))
-
+    print("Faculity chosen class percentage with RCC: ", statistics.mean(faculity_chosen_class_percentage))
+    print("Faculity chosen class percentage without RCC: ", statistics.mean(faculity_chosen_class_percentage_no_rcc))
 
     # create histograms for the data
     # kept class list percentage histogram
@@ -167,6 +179,9 @@ def calculate_class_percentages(files, startyear, endyear):
         plt.title("Percentage of kept classes with RCC for: " + str(startyear) + "-" + str(endyear))
     else:
         plt.title("Percentage of kept classes with RCC for: " + str(startyear))
+
+    #plt.legend(loc="upper left", prop={"size": "10"})
+    plt.ylim(0,300)
     plt.show()
 
     # pre schedule change histogram
@@ -178,6 +193,9 @@ def calculate_class_percentages(files, startyear, endyear):
         plt.title("Percentage of kept classes without RCC for: " + str(startyear) + "-" + str(endyear))
     else:
         plt.title("Percentage of kept classes without RCC for: " + str(startyear))
+
+    #plt.legend(loc="upper left", prop={"size": "10"})
+    plt.ylim(0,300)
     plt.show()
 
     # pre schedule change histogram
@@ -189,6 +207,9 @@ def calculate_class_percentages(files, startyear, endyear):
         plt.title("Percentage of faculity chosen classes for: " + str(startyear) + "-" + str(endyear))
     else:
         plt.title("Percentage of faculity chosen classes for: " + str(startyear))
+
+    #plt.legend(loc="upper left", prop={"size": "10"})
+    plt.ylim(0,300)
     plt.show()
     
 
@@ -214,7 +235,7 @@ def calculate_credit_hours(files, startyear, endyear):
 
     # pre schedule change histogram
     plt.figure(0)
-    plt.hist([credit_hours_pre, credit_hours_post], bins=20, histtype="bar", label=["credit hours pre registration", "credit hours post registration"])
+    counts, edges, bars = plt.hist([credit_hours_pre, credit_hours_post], bins=20, histtype="bar", label=["credit hours pre registration", "credit hours post registration"])
     plt.xlabel("Number of Credit Hours")
     plt.ylabel("Number of students")
     if startyear != endyear:
@@ -232,7 +253,10 @@ def calculate_credit_hours(files, startyear, endyear):
     #     plt.title("Number of Credit Hours Post Schedule Change for: " + str(startyear) + "-" + str(endyear))
     # else:
     #     plt.title("Number of Credit Hours Post Schedule Change for: " + str(startyear))
+    for bar in bars:
+        plt.bar_label(bar, fontsize=5)
     plt.legend(loc="upper left", prop={"size": "10"})
+    plt.ylim(0,350)
     plt.show()
     #plt.savefig("credit_hours_post_hist.pdf", bbox_inches="tight")
 
@@ -257,34 +281,94 @@ def calculate_dropped_classes(files, startyear, endyear):
         dropped_classes = student.calculate_dropped_classes()
 
         if registered_classes > 0:
-            dropped_class_ratio.append(dropped_classes / registered_classes)
+            dropped_class_ratio.append((dropped_classes / registered_classes) * 100)
 
     plt.figure(0)
-    plt.hist(dropped_class_ratio, bins=20)
+    counts, edges, bars = plt.hist(dropped_class_ratio, bins=20)
+    plt.bar_label(bars)
     plt.xlabel("Percentage of dropped classes")
     plt.ylabel("Number of students")
     if startyear != endyear:
         plt.title("Number of dropped classes for: " + str(startyear) + "-" + str(endyear))
     else:
         plt.title("Number of dropped classes for: " + str(startyear))
+
+    #plt.legend(loc="upper left", prop={"size": "10"})
+    plt.ylim(0,400)
     plt.show()
     #plt.savefig("num_dropped_classes_per_student_hist.pdf")
 
-    print("dropped classes graph saved")
+def calculate_dropped_class_subject_distribution(files, startyear = 2017, endyear = 2020):
+    # if the endyear is smaller than the start year flip them
+    if endyear < startyear:
+        s = endyear
+        endyear = startyear
+        startyear = s
+
+    dropped_classes = []
+    added_classes = []
+    dropped_classes_dict = {}
+    added_classes_dict = {}
+    yaxis_dropped = []
+    yaxis_added = []
+    labels = []
+
+    data_frames = read_csv_data(files)
+    students = create_student_objects(data_frames, startyear, endyear)
+
+    for student in students:
+        dropped_classes += student.get_dropped_class_subject_code()
+        added_classes += student.get_added_class_subject_code()
+
+    for code in dropped_classes:
+        if code not in labels:
+            labels.append(code)
+
+        if code not in dropped_classes_dict:
+            dropped_classes_dict[code] = 0
+            added_classes_dict[code] = 0
+
+        dropped_classes_dict[code] += 1
+
+    for code in added_classes:
+        if code not in labels:
+            labels.append(code)
+
+        if code not in added_classes_dict:
+            dropped_classes_dict[code] = 0
+            added_classes_dict[code] = 0
+
+        added_classes_dict[code] += 1
+
+    for label in labels:
+        yaxis_dropped.append(dropped_classes_dict[label])
+        yaxis_added.append(added_classes_dict[label])
+
+    # we have 61 different subject codes what is the best way to display them all?
+    plt.bar(labels, yaxis_dropped, 0.4, label = "Dropped Classes")
+    plt.bar(labels, yaxis_added, 0.4, label="Added Classes")
+
+    plt.xticks(np.arange(len(labels)))
+    plt.xlabel("Subject Code")
+    plt.ylabel("Number of Students")
+    plt.title("Classes by Subject Code")
+    plt.legend()
+    plt.show()
 
 def run_class_percentages(files, startyear = 2017, endyear = 2020):
     calculate_class_percentages(files, startyear, endyear)
 
-def run_credit_hours(files, startyear = 2017, endyear = 2020):
+def run_credit_hours(files, startyear = 2017, endyear = 2017):
     calculate_credit_hours(files, startyear, endyear)
 
-def run_dropped_classes(files, startyear = 2017, endyear = 2020):
+def run_dropped_classes(files, startyear = 2017, endyear = 2017):
     calculate_dropped_classes(files, startyear, endyear)
 
 def main(files):
-    run_class_percentages(files, 2017, 2020)
-    run_credit_hours(files)
-    run_dropped_classes(files)
+    #run_class_percentages(files, 2017, 2020)
+    #run_credit_hours(files)
+    #run_dropped_classes(files)
+    calculate_dropped_class_subject_distribution(files)
 
 if __name__ == "__main__":
 

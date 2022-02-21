@@ -58,15 +58,30 @@ class Student:
         
         return num_classes_dropped
 
-    def calculate_faculity_chosen_classes(self):
+    def calculate_faculity_chosen_classes(self, rcc_analysis):
 
         registration_classes = self.registration_classes
         initial_classes = self.initial_classes
+
+        if not rcc_analysis:
+            for course in initial_classes:
+                assert isinstance(course, Registration), "Expected a registration object"
+
+                if course.get_subject_code() == "RCC":
+                    initial_classes.remove(course)
+
+                for course in registration_classes:
+                    assert isinstance(course, Registration), "Expected a registration object"
+
+                if course.get_subject_code() == "RCC":
+                    initial_classes.remove(course)
 
         num_classes_chosen = 0
         num_classes = len(registration_classes)
 
         for reg_class in registration_classes:
+            assert isinstance(reg_class, Registration), "Expected a registration object"
+
             if reg_class in initial_classes:
                 num_classes_chosen += 1
 
@@ -129,4 +144,28 @@ class Student:
 
     def get_registered_classes(self):
         return len(self.initial_classes)
+
+    def get_dropped_class_subject_code(self):
+        
+        dropped_classes_subject_code = []
+
+        for course in self.initial_classes:
+
+            if course not in self.registration_classes:
+                dropped_classes_subject_code.append(course.get_subject_code())
+
+        return dropped_classes_subject_code
+
+
+    def get_added_class_subject_code(self):
+
+        added_classes_subject_code = []
+
+        for course in self.registration_classes:
+
+            if course not in self.intial_classes:
+                added_classes_subject_code.append(course.get_subject_code())
+
+        return added_classes_subject_code
+
 
