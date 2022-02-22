@@ -50,32 +50,32 @@ class Student:
         """
 
         num_classes_dropped = 0
+        initial_classes = self.initial_classes.copy()
+        registration_classes = self.registration_classes.copy()
 
-        for initial_class in self.initial_classes:
+        for initial_class in initial_classes:
 
-            if initial_class not in self.registration_classes:
+            if initial_class not in registration_classes:
                 num_classes_dropped += 1
         
         return num_classes_dropped
 
     def calculate_faculity_chosen_classes(self, rcc_analysis):
 
-        registration_classes = self.registration_classes
-        initial_classes = self.initial_classes
+        registration_classes = self.registration_classes.copy()
+        initial_classes = self.initial_classes.copy()
 
         if not rcc_analysis:
             for course in initial_classes:
                 assert isinstance(course, Registration), "Expected a registration object"
-
                 if course.get_subject_code() == "RCC":
                     initial_classes.remove(course)
 
-                for course in registration_classes:
-                    assert isinstance(course, Registration), "Expected a registration object"
+            for course in registration_classes:
+                assert isinstance(course, Registration), "Expected a registration object"
 
                 if course.get_subject_code() == "RCC":
-                    initial_classes.remove(course)
-
+                    registration_classes.remove(course)
         num_classes_chosen = 0
         num_classes = len(registration_classes)
 
@@ -91,8 +91,8 @@ class Student:
         """
         This function is responsible for finding out what percentage of classes this student kept
         """
-        initial_classes = self.initial_classes
-        registration_classes = self.registration_classes
+        initial_classes = self.initial_classes.copy()
+        registration_classes = self.registration_classes.copy()
 
         # remove the rcc courses from the lists if they are not supposed to be analyized
         if not rcc_analysis:
@@ -134,8 +134,9 @@ class Student:
 
     def calculate_credit_hours_post(self):
         num_credit_hours = 0
+        registration_classes = self.registration_classes.copy()
 
-        for course in self.registration_classes:
+        for course in registration_classes:
             assert isinstance(course, Registration), "Expected a registration object"
 
             num_credit_hours += float(course.get_credit_hours())
@@ -148,10 +149,12 @@ class Student:
     def get_dropped_class_subject_code(self):
         
         dropped_classes_subject_code = []
+        initial_classes = self.initial_classes.copy()
+        registration_classes = self.registration_classes.copy()
 
-        for course in self.initial_classes:
+        for course in initial_classes:
 
-            if course not in self.registration_classes:
+            if course not in registration_classes:
                 dropped_classes_subject_code.append(course.get_subject_code())
 
         return dropped_classes_subject_code
@@ -160,10 +163,12 @@ class Student:
     def get_added_class_subject_code(self):
 
         added_classes_subject_code = []
+        initial_classes = self.initial_classes.copy()
+        registration_classes = self.registration_classes.copy()
 
-        for course in self.registration_classes:
+        for course in registration_classes:
 
-            if course not in self.intial_classes:
+            if course not in initial_classes:
                 added_classes_subject_code.append(course.get_subject_code())
 
         return added_classes_subject_code

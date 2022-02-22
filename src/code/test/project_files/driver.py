@@ -152,11 +152,17 @@ def calculate_class_percentages(files, startyear, endyear):
         # calculate number of kept classes percentage without rcc
         kept_classes_no_rcc = student.calculate_kept_class_percentage(False)
 
+        # calculate number of faculity chosen class percentage with rcc
+        faculity_chosen_class = student.calculate_faculity_chosen_classes(True)
+
+        # calculate number of faculity chosen class percentage without rcc
+        faculity_chosen_class_no_rcc = student.calculate_faculity_chosen_classes(False)
+
         dropped_classes_list.append(dropped_classes)
         kept_classes_list_rcc.append(kept_classes_rcc)
         kept_classes_list_no_rcc.append(kept_classes_no_rcc)
-        faculity_chosen_class_percentage.append(student.calculate_faculity_chosen_classes(True))
-        faculity_chosen_class_percentage_no_rcc.append(student.calculate_faculity_chosen_classes(False))
+        faculity_chosen_class_percentage.append(faculity_chosen_class)
+        faculity_chosen_class_percentage_no_rcc.append(faculity_chosen_class_no_rcc)
 
         if dropped_classes > 0:
             students_dropped_classes += 1
@@ -171,46 +177,49 @@ def calculate_class_percentages(files, startyear, endyear):
 
     # create histograms for the data
     # kept class list percentage histogram
-    plt.figure(0)
-    plt.hist(kept_classes_list_rcc, bins=20)
-    plt.xlabel("Percentage of kept classes with RCC")
-    plt.ylabel("Number of students")
-    if startyear != endyear:
-        plt.title("Percentage of kept classes with RCC for: " + str(startyear) + "-" + str(endyear))
-    else:
-        plt.title("Percentage of kept classes with RCC for: " + str(startyear))
+    # plt.figure(0)
+    # plt.hist(kept_classes_list_rcc, bins=20)
+    # plt.xlabel("Percentage of kept classes with RCC")
+    # plt.ylabel("Number of students")
+    # if startyear != endyear:
+    #     plt.title("Percentage of kept classes with RCC for: " + str(startyear) + "-" + str(endyear))
+    # else:
+    #     plt.title("Percentage of kept classes with RCC for: " + str(startyear))
 
-    #plt.legend(loc="upper left", prop={"size": "10"})
-    plt.ylim(0,300)
-    plt.show()
+    # #plt.legend(loc="upper left", prop={"size": "10"})
+    # if startyear == endyear:
+    #     plt.ylim(0,300)
+    # plt.show()
 
-    # pre schedule change histogram
-    plt.figure(1)
-    plt.hist(kept_classes_list_no_rcc, bins=20)
-    plt.xlabel("Percentage of kept classes without RCC")
-    plt.ylabel("Number of students")
-    if startyear != endyear:
-        plt.title("Percentage of kept classes without RCC for: " + str(startyear) + "-" + str(endyear))
-    else:
-        plt.title("Percentage of kept classes without RCC for: " + str(startyear))
+    # # pre schedule change histogram
+    # plt.figure(1)
+    # plt.hist(kept_classes_list_no_rcc, bins=20)
+    # plt.xlabel("Percentage of kept classes without RCC")
+    # plt.ylabel("Number of students")
+    # if startyear != endyear:
+    #     plt.title("Percentage of kept classes without RCC for: " + str(startyear) + "-" + str(endyear))
+    # else:
+    #     plt.title("Percentage of kept classes without RCC for: " + str(startyear))
 
-    #plt.legend(loc="upper left", prop={"size": "10"})
-    plt.ylim(0,300)
-    plt.show()
+    # #plt.legend(loc="upper left", prop={"size": "10"})
+    # if startyear == endyear:
+    #     plt.ylim(0,300)
+    # plt.show()
 
-    # pre schedule change histogram
-    plt.figure(2)
-    plt.hist(faculity_chosen_class_percentage, bins=20)
-    plt.xlabel("Percentage of faculity chosen classes")
-    plt.ylabel("Number of students")
-    if startyear != endyear:
-        plt.title("Percentage of faculity chosen classes for: " + str(startyear) + "-" + str(endyear))
-    else:
-        plt.title("Percentage of faculity chosen classes for: " + str(startyear))
+    # # pre schedule change histogram
+    # plt.figure(2)
+    # plt.hist(faculity_chosen_class_percentage, bins=20)
+    # plt.xlabel("Percentage of faculity chosen classes")
+    # plt.ylabel("Number of students")
+    # if startyear != endyear:
+    #     plt.title("Percentage of faculity chosen classes for: " + str(startyear) + "-" + str(endyear))
+    # else:
+    #     plt.title("Percentage of faculity chosen classes for: " + str(startyear))
 
-    #plt.legend(loc="upper left", prop={"size": "10"})
-    plt.ylim(0,300)
-    plt.show()
+    # #plt.legend(loc="upper left", prop={"size": "10"})
+    # if startyear == endyear:
+    #     plt.ylim(0,300)
+    # plt.show()
     
 
 # This function is responsible for calculating the number of credit hours a student was registered for
@@ -256,7 +265,8 @@ def calculate_credit_hours(files, startyear, endyear):
     for bar in bars:
         plt.bar_label(bar, fontsize=5)
     plt.legend(loc="upper left", prop={"size": "10"})
-    plt.ylim(0,350)
+    if startyear == endyear:
+        plt.ylim(0,350)
     plt.show()
     #plt.savefig("credit_hours_post_hist.pdf", bbox_inches="tight")
 
@@ -294,11 +304,12 @@ def calculate_dropped_classes(files, startyear, endyear):
         plt.title("Number of dropped classes for: " + str(startyear))
 
     #plt.legend(loc="upper left", prop={"size": "10"})
-    plt.ylim(0,400)
+    if startyear == endyear:
+        plt.ylim(0,400)
     plt.show()
     #plt.savefig("num_dropped_classes_per_student_hist.pdf")
 
-def calculate_dropped_class_subject_distribution(files, startyear = 2017, endyear = 2020):
+def calculate_dropped_class_subject_distribution(files, startyear = 2017, endyear = 2017):
     # if the endyear is smaller than the start year flip them
     if endyear < startyear:
         s = endyear
@@ -345,14 +356,24 @@ def calculate_dropped_class_subject_distribution(files, startyear = 2017, endyea
         yaxis_added.append(added_classes_dict[label])
 
     # we have 61 different subject codes what is the best way to display them all?
-    plt.bar(labels, yaxis_dropped, 0.4, label = "Dropped Classes")
-    plt.bar(labels, yaxis_added, 0.4, label="Added Classes")
+    plt.figure(figsize=(12,5))
+    dropped_bars = plt.bar(np.arange(len(labels)) - 0.2, yaxis_dropped, 0.4, label = "Dropped Classes")
+    added_bars = plt.bar(np.arange(len(labels)) + 0.2, yaxis_added, 0.4, label= "Added Classes")
 
-    plt.xticks(np.arange(len(labels)))
+    xlocs, xlabs = plt.xticks(np.arange(len(labels)), labels, rotation=90)
     plt.xlabel("Subject Code")
     plt.ylabel("Number of Students")
     plt.title("Classes by Subject Code")
     plt.legend()
+    
+    for bar in dropped_bars:
+        yval = bar.get_height()
+        plt.text(bar.get_x() - .2, yval + .2, yval, fontsize=6)
+
+    for bar in added_bars:
+        yval = bar.get_height()
+        plt.text(bar.get_x() - .2, yval + .2, yval, fontsize = 6)
+
     plt.show()
 
 def run_class_percentages(files, startyear = 2017, endyear = 2020):
