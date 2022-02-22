@@ -12,6 +12,9 @@ def runCreditHours(startyear, endyear):
 def runDroppedClasses(startyear, endyear):
     driver.run_dropped_classes(["../../../../data/Registration Data/Freshmen Registration Changes _ per student layout.csv","../../../../data/Registration Data/Freshmen Registration with Change Status.csv"], startyear, endyear)
 
+def runDroppedClassSubjectDistribution(startyear, endyear):
+    driver.run_dropped_class_subject_distribution(["../../../../data/Registration Data/Freshmen Registration Changes _ per student layout.csv","../../../../data/Registration Data/Freshmen Registration with Change Status.csv"], startyear, endyear)
+
 # main function
 def main():
     # create the window
@@ -64,6 +67,8 @@ def main():
     droppedClassesButton.grid(row=2, column=0)
     #droppedClassesButton.bind("<Button-1>", runDroppedClasses)
 
+    class_subject_distribution_button = tk.Button(master=buttonFrame, text="Calculate Subject Distributions", width=30, command=lambda: runDroppedClassSubjectDistribution(startYearVar.get(), endYearVar.get()))
+    class_subject_distribution_button.grid(row=3, column=0)
     # run the event loop
     window.mainloop()
 

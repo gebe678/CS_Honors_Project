@@ -309,7 +309,7 @@ def calculate_dropped_classes(files, startyear, endyear):
     plt.show()
     #plt.savefig("num_dropped_classes_per_student_hist.pdf")
 
-def calculate_dropped_class_subject_distribution(files, startyear = 2017, endyear = 2017):
+def calculate_dropped_class_subject_distribution(files, startyear, endyear):
     # if the endyear is smaller than the start year flip them
     if endyear < startyear:
         s = endyear
@@ -363,16 +363,19 @@ def calculate_dropped_class_subject_distribution(files, startyear = 2017, endyea
     plt.xticks(np.arange(len(labels)), labels, rotation=90)
     plt.xlabel("Subject Code")
     plt.ylabel("Number of Students")
-    plt.title("Classes by Subject Code")
+    if startyear != endyear:
+        plt.title("Subject Distribution For: " + str(startyear) + "-" + str(endyear))
+    else:
+        plt.title("Subject Distribution For: " + str(startyear))
     plt.legend()
     
     for bar in dropped_bars:
         yval = bar.get_height()
-        plt.text(bar.get_x() - .2, yval + .2, yval, fontsize=6)
+        plt.text(bar.get_x() - .1, yval + .2, yval, fontsize=6)
 
     for bar in added_bars:
         yval = bar.get_height()
-        plt.text(bar.get_x() - .2, yval + .2, yval, fontsize = 6)
+        plt.text(bar.get_x() - .1, yval + .2, yval, fontsize = 6)
 
     plt.show()
 
@@ -385,11 +388,14 @@ def run_credit_hours(files, startyear = 2017, endyear = 2017):
 def run_dropped_classes(files, startyear = 2017, endyear = 2017):
     calculate_dropped_classes(files, startyear, endyear)
 
+def run_dropped_class_subject_distribution(files, startyear = 2017, endyear = 2017):
+    calculate_dropped_class_subject_distribution(files, startyear, endyear)
+
 def main(files):
     #run_class_percentages(files, 2017, 2020)
     #run_credit_hours(files)
     #run_dropped_classes(files)
-    calculate_dropped_class_subject_distribution(files)
+    run_dropped_class_subject_distribution(files)
 
 if __name__ == "__main__":
 
