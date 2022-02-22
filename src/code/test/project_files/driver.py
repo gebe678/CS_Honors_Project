@@ -360,7 +360,7 @@ def calculate_dropped_class_subject_distribution(files, startyear = 2017, endyea
     dropped_bars = plt.bar(np.arange(len(labels)) - 0.2, yaxis_dropped, 0.4, label = "Dropped Classes")
     added_bars = plt.bar(np.arange(len(labels)) + 0.2, yaxis_added, 0.4, label= "Added Classes")
 
-    xlocs, xlabs = plt.xticks(np.arange(len(labels)), labels, rotation=90)
+    plt.xticks(np.arange(len(labels)), labels, rotation=90)
     plt.xlabel("Subject Code")
     plt.ylabel("Number of Students")
     plt.title("Classes by Subject Code")
