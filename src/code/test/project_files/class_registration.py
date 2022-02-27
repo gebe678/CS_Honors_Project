@@ -9,6 +9,7 @@ class Registration:
         self.section_number = 0
         self.credit_hours = 0
         self.course_year = 0
+        self.competency = 0
 
     ######################################################################################################################################################################################
     # GETTERS AND SETTERS #
@@ -49,6 +50,12 @@ class Registration:
     def set_credit_hours(self, credit_hours):
         self.credit_hours = credit_hours
 
+    def get_competency(self):
+        return self.competency
+
+    def set_competency(self, competency):
+        self.competency = competency
+
     #####################################################################################################################################################################################
 
     def print_course_information(self):
@@ -58,3 +65,4 @@ class Registration:
         print("course number: ", self.get_course_number())
         print("section number: ", self.get_section_number())
         print("credit hours: ", self.get_credit_hours())
+        print("competency: ", self.get_competency())

@@ -16,14 +16,30 @@ def read_csv_data(files):
 
     # go through all of the files and create dataframes from the csv's
     for file in files:
-        data_frames.append(pd.read_csv(file))
+        data_frames.append(pd.read_csv(file, encoding = "unicode_escape"))
 
     return data_frames
 
 def create_class_registration_objects(data):
     registration_dict = {}
+    competency_dict = {}
+    year_list = [np.int64(201709), np.int64(201809), np.int64(201909), np.int64(202009), np.int64(202109)]
     registration_classes = data[1]
 
+    for i in range(2,len(data)):
+        competency_data = data[i]
+
+        for (columnName, columnValues) in competency_data.iteritems():
+            competency_data[columnName].fillna("NONE", inplace=True)
+
+        for j in range(len(competency_data.index)):
+
+            comp_data = competency_data.loc[j]
+            crn_number = np.int64(comp_data["Course"].split(" ")[0])
+            competency = comp_data["Competency/GenEd"]
+            key = crn_number,year_list[i - 2]
+
+            competency_dict[key] = competency
     # replace the nan values in the dataframe with NaN (type string)
     for (columnName, columnValues) in registration_classes.iteritems():
         registration_classes[columnName].fillna("NaN", inplace=True)
@@ -40,6 +56,11 @@ def create_class_registration_objects(data):
         reg.set_course_number(data["CRSE_NUMB"])
         reg.set_section_number(data["Section Number"])
         reg.set_credit_hours(data["CREDIT_HRS"])
+
+        if (reg.get_crn_key(),reg.get_term_code()) in competency_dict:
+            reg.set_competency(competency_dict[reg.get_crn_key(), reg.get_term_code()])
+        else:
+            reg.set_competency("NOT FOUND")
 
         if reg not in registration_dict:
             registration_dict[reg.get_crn_key(),reg.get_term_code()] = reg
@@ -379,6 +400,77 @@ def calculate_dropped_class_subject_distribution(files, startyear, endyear):
 
     plt.show()
 
+
+def calculate_dropped_class_competency(files, startyear, endyear):
+    # if the endyear is smaller than the start year flip them
+    if endyear < startyear:
+        s = endyear
+        endyear = startyear
+        startyear = s
+
+    dropped_classes = []
+    added_classes = []
+    dropped_classes_dict = {}
+    added_classes_dict = {}
+    yaxis_dropped = []
+    yaxis_added = []
+    labels = []
+
+    data_frames = read_csv_data(files)
+    students = create_student_objects(data_frames, startyear, endyear)
+
+    for student in students:
+        dropped_classes += student.get_dropped_class_competency()
+        added_classes += student.get_added_class_competency()
+
+    for code in dropped_classes:
+        if code not in labels:
+            labels.append(code)
+
+        if code not in dropped_classes_dict:
+            dropped_classes_dict[code] = 0
+            added_classes_dict[code] = 0
+
+        dropped_classes_dict[code] += 1
+
+    for code in added_classes:
+        if code not in labels:
+            labels.append(code)
+
+        if code not in added_classes_dict:
+            dropped_classes_dict[code] = 0
+            added_classes_dict[code] = 0
+
+        added_classes_dict[code] += 1
+
+    for label in labels:
+        yaxis_dropped.append(dropped_classes_dict[label])
+        yaxis_added.append(added_classes_dict[label])
+
+    # we have 61 different subject codes what is the best way to display them all?
+    plt.figure(figsize=(12,5))
+    dropped_bars = plt.bar(np.arange(len(labels)) - 0.2, yaxis_dropped, 0.4, label = "Dropped Classes")
+    added_bars = plt.bar(np.arange(len(labels)) + 0.2, yaxis_added, 0.4, label= "Added Classes")
+
+    plt.xticks(np.arange(len(labels)), labels, rotation=90)
+    plt.xlabel("Competency")
+    plt.ylabel("Number of Students")
+    if startyear != endyear:
+        plt.title("Competency Distribution For: " + str(startyear) + "-" + str(endyear))
+    else:
+        plt.title("Competency Distribution For: " + str(startyear))
+    plt.legend()
+    
+    for bar in dropped_bars:
+        yval = bar.get_height()
+        plt.text(bar.get_x(), yval + .2, yval, fontsize=6)
+
+    for bar in added_bars:
+        yval = bar.get_height()
+        plt.text(bar.get_x(), yval + .2, yval, fontsize = 6)
+
+    plt.show()
+
 def run_class_percentages(files, startyear = 2017, endyear = 2020):
     calculate_class_percentages(files, startyear, endyear)
 
@@ -388,14 +480,18 @@ def run_credit_hours(files, startyear = 2017, endyear = 2017):
 def run_dropped_classes(files, startyear = 2017, endyear = 2017):
     calculate_dropped_classes(files, startyear, endyear)
 
-def run_dropped_class_subject_distribution(files, startyear = 2017, endyear = 2017):
+def run_dropped_class_subject_distribution(files, startyear = 2018, endyear = 2018):
     calculate_dropped_class_subject_distribution(files, startyear, endyear)
+
+def run_dropped_class_competency(files, startyear = 2017, endyear = 2017):
+    calculate_dropped_class_competency(files, startyear, endyear)
 
 def main(files):
     #run_class_percentages(files, 2017, 2020)
     #run_credit_hours(files)
     #run_dropped_classes(files)
-    run_dropped_class_subject_distribution(files)
+    #run_dropped_class_subject_distribution(files)
+    run_dropped_class_competency(files)
 
 if __name__ == "__main__":
 
@@ -404,5 +500,12 @@ if __name__ == "__main__":
         main(files)
 
     else:
-        main(["../../../../data/Registration Data/Freshmen Registration Changes _ per student layout.csv","../../../../data/Registration Data/Freshmen Registration with Change Status.csv"])
+        files = []
+        input_file_path = open("file_paths.txt", "r")
+        
+        for input_files in input_file_path:
+            files.append(input_files.strip())
+
+        print(files)
+        main(files)
         

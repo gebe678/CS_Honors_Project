@@ -3,17 +3,34 @@ import tkinter as tk
 from numpy import row_stack
 import driver
 
+def getFiles():
+    files = []
+    input_file_path = open("file_paths.txt", "r")
+        
+    for input_files in input_file_path:
+        files.append(input_files.strip())
+
+    return files
+
 def runClassPercentages(startyear, endyear):
-    driver.run_class_percentages(["../../../../data/Registration Data/Freshmen Registration Changes _ per student layout.csv","../../../../data/Registration Data/Freshmen Registration with Change Status.csv"], startyear, endyear)
+    files = getFiles()
+    driver.run_class_percentages(files, startyear, endyear)
 
 def runCreditHours(startyear, endyear):
-    driver.run_credit_hours(["../../../../data/Registration Data/Freshmen Registration Changes _ per student layout.csv","../../../../data/Registration Data/Freshmen Registration with Change Status.csv"], startyear, endyear)
+    files = getFiles()
+    driver.run_credit_hours(files, startyear, endyear)
 
 def runDroppedClasses(startyear, endyear):
-    driver.run_dropped_classes(["../../../../data/Registration Data/Freshmen Registration Changes _ per student layout.csv","../../../../data/Registration Data/Freshmen Registration with Change Status.csv"], startyear, endyear)
+    files = getFiles()
+    driver.run_dropped_classes(files, startyear, endyear)
 
 def runDroppedClassSubjectDistribution(startyear, endyear):
-    driver.run_dropped_class_subject_distribution(["../../../../data/Registration Data/Freshmen Registration Changes _ per student layout.csv","../../../../data/Registration Data/Freshmen Registration with Change Status.csv"], startyear, endyear)
+    files = getFiles()
+    driver.run_dropped_class_subject_distribution(files, startyear, endyear)
+
+def runDroppedClassCompetency(startyear, endyear):
+    files = getFiles()
+    driver.run_dropped_class_competency(files, startyear, endyear)
 
 # main function
 def main():
@@ -69,6 +86,9 @@ def main():
 
     class_subject_distribution_button = tk.Button(master=buttonFrame, text="Calculate Subject Distributions", width=30, command=lambda: runDroppedClassSubjectDistribution(startYearVar.get(), endYearVar.get()))
     class_subject_distribution_button.grid(row=3, column=0)
+
+    class_competency_distribution_button = tk.Button(master=buttonFrame, text="Calculate Competency Distributions", width=30, command=lambda: runDroppedClassCompetency(startYearVar.get(), endYearVar.get()))
+    class_competency_distribution_button.grid(row=4, column=0)
     # run the event loop
     window.mainloop()
 

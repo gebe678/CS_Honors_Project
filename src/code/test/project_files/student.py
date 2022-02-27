@@ -173,4 +173,27 @@ class Student:
 
         return added_classes_subject_code
 
+    def get_dropped_class_competency(self):
+
+        dropped_classes_competency = []
+        initial_classes = self.initial_classes.copy()
+        registration_classes = self.registration_classes.copy()
+
+        for course in initial_classes:
+            if course not in registration_classes:
+                dropped_classes_competency.append(course.get_competency())
+
+        return dropped_classes_competency
+
+    def get_added_class_competency(self):
+
+        added_classes_competency = []
+        initial_classes = self.initial_classes.copy()
+        registration_classes = self.registration_classes.copy()
+
+        for course in registration_classes:
+            if course not in initial_classes:
+                added_classes_competency.append(course.get_competency())
+
+        return added_classes_competency
 
