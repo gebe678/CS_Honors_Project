@@ -71,10 +71,13 @@ def parseData(file):
             data_row.append(element.text.strip())
             counter = 1
 
-        elif counter < 10:
+        elif counter <= 10:
             data_row.append(element.text.strip())
 
         elif counter == 11:
+            print(data_row)
+            print()
+            print()
             data_row.append(element.text.strip())
             data_list.append(data_row)
             data_row = []

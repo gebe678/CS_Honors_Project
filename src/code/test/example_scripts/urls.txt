@@ -1,8 +1,4 @@
-../../../data/html_files/College of Liberal Arts Schedule of Classes Fall 2018.html
-../../../data/html_files/College of Liberal Arts Schedule of Classes Spring 2019.html
-../../../data/html_files/College of Liberal Arts Schedule of Classes Fall 2019.html
-../../../data/html_files/College of Liberal Arts Schedule of Classes Spring 2020.html
-../../../data/html_files/College of Liberal Arts Schedule of Classes Fall 2020.html
-../../../data/html_files/College of Liberal Arts Schedule of Classes Spring 2021.html
-../../../data/html_files/College of Liberal Arts Schedule of Classes Fall 2021.html
-../../../data/html_files/College of Liberal Arts Schedule of Classes Spring 2022.html
+html_files/College of Liberal Arts Schedule of Classes Fall 2018.html
+html_files/College of Liberal Arts Schedule of Classes Fall 2019.html
+html_files/College of Liberal Arts Schedule of Classes Fall 2020.html
+html_files/College of Liberal Arts Schedule of Classes Fall 2021.html
