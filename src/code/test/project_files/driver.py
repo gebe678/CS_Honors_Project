@@ -287,7 +287,7 @@ def calculate_credit_hours(files, startyear, endyear):
         plt.bar_label(bar, fontsize=5)
     plt.legend(loc="upper left", prop={"size": "10"})
     if startyear == endyear:
-        plt.ylim(0,350)
+        plt.ylim(0,360)
     plt.show()
     #plt.savefig("credit_hours_post_hist.pdf", bbox_inches="tight")
 
@@ -371,6 +371,8 @@ def calculate_dropped_class_subject_distribution(files, startyear, endyear):
             added_classes_dict[code] = 0
 
         added_classes_dict[code] += 1
+
+    labels.sort()
 
     for label in labels:
         yaxis_dropped.append(dropped_classes_dict[label])
