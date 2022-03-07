@@ -26,6 +26,8 @@ def create_class_registration_objects(data):
     year_list = [np.int64(201709), np.int64(201809), np.int64(201909), np.int64(202009), np.int64(202109)]
     registration_classes = data[1]
 
+    not_found_class_list = []
+
     for i in range(2,len(data)):
         competency_data = data[i]
 
@@ -62,8 +64,14 @@ def create_class_registration_objects(data):
         else:
             reg.set_competency("NOT FOUND")
 
+            if "Course crn_key: " + str(reg.get_crn_key()) + " term code " + str(reg.get_term_code()) + " Subject Dist: " + str(reg.get_subject_code()) + " NOT FOUND" not in not_found_class_list:
+                not_found_class_list.append("Course crn_key: " + str(reg.get_crn_key()) + " term code " + str(reg.get_term_code()) + " Subject Dist: " + str(reg.get_subject_code()) + " NOT FOUND")
+
         if reg not in registration_dict:
             registration_dict[reg.get_crn_key(),reg.get_term_code()] = reg
+
+    for item in not_found_class_list:
+        print(item)
 
     return registration_dict
 

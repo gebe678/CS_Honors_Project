@@ -2,6 +2,8 @@ Department,Status,AVAIL/CAP/(WL),Course,Course Title,Credits,Time,Days,Location,
 Anthropology,Filled,-1 / 22 / (0),90001  ANT 200 1,Cultural Anthropology_CE,4,2 :00-3 :15P,TR,CSS 221,N Kline,,IR elective; AAAS core; CE course
 Anthropology,Open,1 / 11 / (0),90002  ANT 202 1,Latin Amer and Carib Society,4,1 :00-2 :15P,MW,CSS 100,"S Kistler                                                   , M Barbero",,Course meetings with 90223 LAC 200; IR elective
 Anthropology,Filled,-1 / 22 / (0),90003  ANT 228 1,Intro to World  Archaeology,4,11:00-12:15P,TR,CSS 100,Z Gilmore,,ARCH core
+Anthropology,Wtlist,-1 / 17 / (2),90004  ANT 255 1,Middle East Culture,4,1 :00-2 :15P,MW,CSS 119,R Newcomb,,MENA core; IR elective; JWS elective; SWAG elective
+Anthropology,Wtlist,0 / 14 / (1),90005  ANT 302 1,The Maya_CE,4,2 :30-3 :45P,MW,CSS 119,S Kistler,,LAC elective; IR elective; CE course
 Anthropology,Open,1 / 19 / (0),90006  ANT 312 1,Ethnographic Methods_CE,4,10:00-10:50A,MWF,CSS 134,S Brown,,CE course
 Anthropology,Open,3 / 15 / (0),90007  ANT 321 1,Public Archaeology_CE,4,2 :00-3 :15P,TR,CSS 100,Z Gilmore,,"ARCH elective, CE course"
 Art & Art History,Open,1 / 12 / (0),90010  ARH 110 1X,Intro Ancient-Medieval Art,4,11:00-11:50A,MWF,CFAC 113,R Vander Poppen,,Waitlist priority given to majors/minors in ART/ARH
@@ -12,6 +14,10 @@ Art & Art History,Open,4 / 18 / (0),90014  ARH 262 1,Theme: Art & Science,4,10:0
 Art & Art History,Open,2 / 12 / (0),90015  ARH 321 1,Tpc:Palaces of Baroque Rome,4,2 :30-3 :45P,MW,CFAC 103,K Dennis,,
 Art & Art History,Filled,0 / 12 / (0),90016  ARH 341 1,African Art and Colonialism,4,1 :00-2 :15P,MW,CFAC 113,M Ryan,,INB elective; AAAS elective
 Art & Art History,Open,14 / 14 / (0),91206  ARH 395 1,Tpc:Dig Methods in ARH & Arch,4,12:00-12:50P,MWF,,R Vander Poppen,,ARCH elective; CLS elective; Waitlist priority for majors/minors in ART/ARH
+Art & Art History,Wtlist,0 / 14 / (2),90017  ART 110 1X,Two-Dimensional Foundations,4,"4 :00-6 :30P
+4 :00-6 :30P","W      
+W","CFAC 110
+CFAC 107",R Simmons,A/HART,Fee: $50; waitlist priority for Major/Minor/Explorers ART/ARH
 Art & Art History,Filled,0 / 16 / (0),90018  ART 120 1,Three-Dimensional Foundations,4,10:00-11:50A,MW,CFAC 101,A Lavigne,,Fee: $50; waitlist priority for Major/Minor/Explorers in ART/ARH
 Art & Art History,Open,5 / 12 / (0),90019  ART 215 1,The Artist's Book,4,"1 :00-3 :50P
 1 :00-3 :50P","W      
@@ -71,34 +77,62 @@ Biology,Filled,-2 / 16 / (0),90040  BIO 342 1,Biostatistics,6,"1 :00-1 :50P
 F","BUSH 102
 BUSH 212",C Myers,MCMP,Prereqs: BIO 121 and departmental consent required
 Biology,Open,1 / 12 / (0),90041  BIO 344 1,Journal Club: Climate Change,2,1 :00-2 :15P,F,BUSH 123,K Sutherland,,Prereqs: BIO 121 and departmental consent required
+Business,Wtlist,1 / 24 / (2),90214  INB 200 1,Intro to Intl Business,4,08:00-08:50A,MWF,FAIRBK 112,A Althuis,,
+Business,Wtlist,0 / 24 / (5),90215  INB 200 2,Intro to Intl Business,4,10:00-10:50A,MWF,LODGE REEVES,A Althuis,,
+Business,Wtlist,0 / 24 / (1),90827  INB 200 3,Intro to Intl Business,4,11:00-11:50A,MWF,LODGE REEVES,A Althuis,,
+Business,Wtlist,0 / 22 / (4),90217  INB 215 1,Global Entertainment Business,4,3 :30-4 :45P,TR,FAIRBK 112,M Sardy,,
 Business,Open,6 / 22 / (0),90218  INB 337 1,International Marketing Mgmt,4,1 :00-2 :15P,MW,FAIRBK 114,M Fetscherin,,"Prereqs: BUS 230, BUS 233, and BUS 236"
+Business,Wtlist,0 / 22 / (1),90219  INB 365 1,International Operations & MIS,4,2 :30-3 :45P,MW,BUSH 212,S Al-Haddad,,"Prereqs: BUS 230, BUS 233, and BUS 236"
 Business,Open,1 / 22 / (0),90220  INB 372 1,Intl Financial Management,4,1 :00-2 :15P,MW,FAIRBK 116,R Lewin,,"Prereqs: BUS 230, BUS 233, and BUS 236"
 Business,Open,9 / 22 / (0),90221  INB 372 2,Intl Financial Management,4,2 :30-3 :45P,MW,FAIRBK 116,R Lewin,,"Prereqs: BUS 230, BUS 233, and BUS 236"
 Business,Open,8 / 22 / (0),90043  BUS 230 1,Financial/Managerial Acctg,4,08:00-08:50A,MWF,FAIRBK 107,S Agee,,Prereqs: MGT 101 or INB 200 or SE 100
+Business,Wtlist,-1 / 22 / (7),90044  BUS 230 2,Financial/Managerial Acctg,4,10:00-10:50A,MWF,FAIRBK 107,D Caban,,Prereqs: MGT 101 or INB 200 or SE 100
 Business,Filled,0 / 22 / (0),90045  BUS 230 3,Financial/Managerial Acctg,4,11:00-11:50A,MWF,FAIRBK 107,S Agee,,Prereqs: MGT 101 or INB 200 or SE 100
 Business,Filled,0 / 22 / (0),90046  BUS 230 4,Financial/Managerial Acctg,4,1 :00-2 :15P,MW,FAIRBK 107,S Agee,,Prereqs: MGT 101 or INB 200 or SE 100
 Business,Open,1 / 22 / (0),90047  BUS 230 5,Financial/Managerial Acctg,4,2 :30-3 :45P,MW,FAIRBK 107,S Agee,,Prereqs: MGT 101 or INB 200 or SE 100
+Business,Wtlist,-3 / 11 / (7),90498  BUS 230 H1X,Financial/Managerial Acctg,4,4 :00-6 :30P,M,FAIRBK 107,D Caban,,Prereqs: MGT 101 or INB 200 or SE 100
 Business,Open,2 / 22 / (0),90048  BUS 233 1,Micro & Macro Economics,4,10:00-10:50A,MWF,CSS 135,S Namingit,,Prereqs: MGT 101 or INB 200 or SE 100; LACS elective
+Business,Wtlist,-1 / 22 / (1),90049  BUS 233 2,Micro & Macro Economics,4,11:00-11:50A,MWF,CSS 135,S Namingit,,Prereqs: MGT 101 or INB 200 or SE 100; LACS elective
 Business,Filled,0 / 22 / (0),90050  BUS 233 3,Micro & Macro Economics,4,11:00-12:15P,TR,ASC 243,A Houndonougbo,,Prereqs: MGT 101 or INB 200 or SE 100; LACS elective
 Business,Open,1 / 22 / (0),90051  BUS 233 4,Micro & Macro Economics,4,2 :00-3 :15P,TR,FAIRBK 116,A Houndonougbo,,Prereqs: MGT 101 or INB 200 or SE 100; LACS elective
+Business,Wtlist,0 / 22 / (3),90052  BUS 236 1,Statistics for Business,4,10:00-10:50A,MWF,FAIRBK 114,S Al-Haddad,MCMP,Prereqs: MGT 101 or INB 200
+Business,Wtlist,0 / 22 / (2),90053  BUS 236 2,Statistics for Business,4,11:00-11:50A,MWF,FAIRBK 114,S Al-Haddad,MCMP,Prereqs: MGT 101 or INB 200
+Business,Wtlist,-1 / 22 / (3),90054  BUS 236 3,Statistics for Business,4,11:00-12:15P,TR,FAIRBK 112,M Sardy,MCMP,Prereqs: MGT 101 or INB 200
 Business,Filled,0 / 22 / (0),90055  BUS 236 4,Statistics for Business,4,2 :00-3 :15P,TR,FAIRBK 112,M Sardy,MCMP,Prereqs: MGT 101 or INB 200
+Business,Wtlist,0 / 22 / (1),90056  BUS 245 1,Intl Organizational Behavior,4,10:00-10:50A,MWF,FAIRBK 116,D Hargrove,ECMP,Prereqs: MGT 101 or INB 200 or SE 100
 Business,Filled,0 / 22 / (0),90057  BUS 245 2,Intl Organizational Behavior,4,11:00-11:50A,MWF,FAIRBK 116,D Hargrove,ECMP,Prereqs: MGT 101 or INB 200 or SE 100
 Business,Filled,0 / 22 / (0),90058  BUS 245 3,Intl Organizational Behavior,4,2 :30-3 :45P,MW,FAIRBK 112,D Hargrove,ECMP,Prereqs: MGT 101 or INB 200 or SE 100
 Business,Filled,-1 / 22 / (0),90059  BUS 245 4,Intl Organizational Behavior,4,08:00-09:15A,TR,FAIRBK 112,E Loch,ECMP,Prereqs: MGT 101 or INB 200 or SE 100
+Business,Wtlist,-2 / 13 / (1),90501  BUS 245 H1X,Intl Organizational Behavior,4,4 :00-5 :15P,MW,FAIRBK 114,E Loch,ECMP,Prereqs: MGT 101 or INB 200 or SE 100
 Business,Open,1 / 9 / (0),90949  BUS 245 H2X,Intl Organizational Behavior,4,6 :45-9 :15P,T,BUSH 302,R Hebeler,,
+Business,Wtlist,0 / 15 / (3),90705  BUS 321 H1X,Global Entrepreneurship,4,4 :00-6 :30P,M,FAIRBK 112,W Sturt,,Prereq: INB 200 or MGT 101 or instructor consent
+Business,Wtlist,-2 / 22 / (2),90060  BUS 332 1,Family Business Financial Mgt,4,1 :00-2 :15P,MW,FAIRBK 112,D Caban,,Prereq: BUS 230
 Business,Open,8 / 22 / (0),90061  BUS 339 1,Marketing Analytics,4,2 :30-3 :45P,MW,FAIRBK 114,M Fetscherin,,Prereqs: INB 337 or MGT 330
+Business,Wtlist,-2 / 22 / (1),90063  BUS 376 1,Personal Selling,4,2 :00-3 :15P,TR,BUSH 308,K Merbler,,Prereqs: BUS 245 and third-year standing
 Business,Open,6 / 22 / (0),90064  BUS 450 1,Global Business Strategy,4,08:00-09:15A,TR,FAIRBK 107,D Rogers,,"Prereqs: MGT 320, MGT 330, and MGT 350; for INB Majors INB 337, INB 365, and INB 372"
 Business,Open,9 / 22 / (0),90065  BUS 450 2,Global Business Strategy,4,09:30-10:45A,TR,FAIRBK 107,S Kiefer,,"Prereqs: MGT 320, MGT 330, and MGT 350; for INB Majors INB 337, INB 365, and INB 372"
 Business,Open,1 / 22 / (0),90066  BUS 450 3,Global Business Strategy,4,11:00-12:15P,TR,FAIRBK 116,D Rogers,,"Prereqs: MGT 320, MGT 330, and MGT 350; for INB Majors INB 337, INB 365, and INB 372"
+Business,Wtlist,1 / 22 / (2),90243  MGT 101 1,Intro to Resp Business Mgmt,4,08:00-08:50A,MWF,FAIRBK 116,M Keunecke,,
+Business,Wtlist,0 / 22 / (2),90244  MGT 101 2,Intro to Resp Business Mgmt,4,10:00-10:50A,MWF,FAIRBK 112,M Keunecke,,
 Business,Filled,-1 / 22 / (0),90245  MGT 101 3,Intro to Resp Business Mgmt,4,11:00-11:50A,MWF,FAIRBK 112,M Keunecke,,
 Business,Filled,-1 / 22 / (0),90246  MGT 101 4,Intro to Resp Business Mgmt,4,1 :00-2 :15P,MW,CSS 170,L Hayner,,
+Business,Wtlist,-1 / 22 / (2),90247  MGT 101 5,Intro to Resp Business Mgmt,4,08:00-09:15A,TR,FAIRBK 114,M Delk,,
 Business,Filled,-1 / 22 / (0),90248  MGT 101 6,Intro to Resp Business Mgmt,4,11:00-12:15P,TR,FAIRBK 107,S Kiefer,,
 Business,Open,3 / 7 / (0),90950  MGT 101 H2X,Intro to Resp Business Mgmt,4,6 :45-9 :15P,M,BUSH 210,M Keunecke,,
+Business,Wtlist,0 / 22 / (6),90249  MGT 312 1,Responsible Bus Leadership,4,08:00-09:15A,TR,CRUM 208,C Jubelt,ECMP,Prereq: BUS 245
+Business,Wtlist,-2 / 22 / (2),90805  MGT 312 2,Responsible Bus Leadership,4,11:00-12:15P,TR,CRUM 208,C Jubelt,ECMP,Prereq: BUS 245
+Business,Wtlist,1 / 22 / (4),90251  MGT 320 1,Entrepreneurial & Corp Finance,4,09:30-10:45A,TR,CRUM 208,C Jubelt,ECMP,"Prereq: BUS 230, BUS 233 and BUS 236"
 Business,Open,2 / 22 / (0),90804  MGT 320 3,Entrepreneurial & Corp Finance,4,1 :00-3 :30P,F,FAIRBK 107,A Houndonougbo,,"Prereq: BUS 230, BUS 233 and BUS 236"
 Business,Filled,0 / 22 / (0),90253  MGT 330 1,Entrepreneurial Marketing,4,09:30-10:45A,TR,FAIRBK 114,R KC,,"Prereqs: BUS 230, BUS 233, and BUS 236"
 Business,Open,2 / 22 / (0),90254  MGT 330 2,Entrepreneurial Marketing,4,11:00-12:15P,TR,FAIRBK 114,R KC,,"Prereqs: BUS 230, BUS 233, and BUS 236"
 Business,Filled,-1 / 25 / (0),90255  MGT 342 1,Human Resource Management,4,08:00-08:50A,MWF,FAIRBK 114,S Adams,,Prereq: BUS 245
+Business,Wtlist,0 / 22 / (3),90256  MGT 342 2,Human Resource Management,4,1 :00-2 :15P,MW,CSS 229,S Namingit,,Prereq: BUS 245
+Business,Wtlist,-2 / 22 / (1),90257  MGT 342 3,Human Resource Management,4,2 :00-3 :15P,TR,FAIRBK 107,D Rogers,,Prereq: BUS 245
+Business,Wtlist,0 / 22 / (5),90258  MGT 350 1,Supply Chain Management,4,2 :00-3 :15P,TR,FAIRBK 114,M Heileman,,"Prereqs: BUS 230, BUS 233, BUS 236, and BUS 245"
+Business,Wtlist,-1 / 22 / (1),90259  MGT 350 2,Supply Chain Management,4,11:00-12:15P,TR,OLIN 225,M Heileman,,"Prereqs: BUS 230, BUS 233, BUS 236, and BUS 245"
 Business,Open,3 / 22 / (0),90260  MGT 352 1,Project Management,4,2 :30-3 :45P,MW,OLIN 225,M Heileman,,Prereq: BUS 245
+Business,Wtlist,1 / 26 / (2),90261  MGT 354 1,High Performance Organizations,4,11:00-12:15P,TR,CSS 230,T Pett,,Prereqs: BUS 236 and BUS 245
+Business,Wtlist,-1 / 15 / (1),90717  MGT 395 H1X,Topic: Consumer Behavior,4,4 :00-6 :30P,W,FAIRBK 107,R KC,,Prereq: MGT 330; Priority to juniors and seniors
 Career and Life Planning,Open,1 / 20 / (0),90824  CLP 102 1,Making Any Major Marketable,2,09:00-09:50A,MW,BUSH 210,"R Lilienthal                                                , D Cordova",,
 Career and Life Planning,Open,2 / 20 / (0),90825  CLP 102 2,Making Any Major Marketable,2,2 :00-3 :15P,TR,CSS 226,"A Stone                                                     , M Gunter",,Course dates: 08/26/19 - 10/11/19
 Career and Life Planning,Open,-5 / 0 / (0),90826  CLP 295 1,Topic: Women in Finance,2,2 :30-5 :00P,W,KMC 1,"C Jubelt                                                    , A Voicu",,"Course intended for sophomores; open to students in all majors; course dates: 10/16/19 - 12/06/19; enrollment by application to Tres Loch, Director of Business Advising (tloch@rollins.edu), and instructor permission."
@@ -110,6 +144,10 @@ Chemistry,Open,3 / 22 / (0),90067  CHM 120 1,Chemistry I,6,"08:00-08:50A
 08:00-10:50A","MWRF   
 T","BUSH 201
 BUSH 305",E Park,,Completion of Math Skills Inventory required; Fee: $50
+Chemistry,Wtlist,2 / 22 / (1),90068  CHM 120 2,Chemistry I,6,"08:00-08:50A
+2 :00-5 :00P","MWRF   
+T","BUSH 308
+BUSH 305",M Fuse,,Completion of Math Skills Inventory required; Fee: $50
 Chemistry,Open,1 / 22 / (0),90069  CHM 120 3,Chemistry I,6,"10:00-10:50A
 10:00-10:50A
 2 :00-5 :00P","MWF    
@@ -130,7 +168,10 @@ Chemistry,Open,8 / 22 / (0),90072  CHM 120 6,Chemistry I,6,"11:00-11:50A
 W","BUSH 208
 BUSH 305",P Bernal,,Completion of Math Skills Inventory required; Fee: $50
 Chemistry,Filled,0 / 28 / (0),90074  CHM 220 1,Organic Chemistry I,4,08:00-08:50A,MWF,BUSH 210,E Vanable,,Coreq: CHM 220L; C- in CHM 121/131 or instructor consent required
+Chemistry,Wtlist,-1 / 28 / (8),90075  CHM 220 2,Organic Chemistry I,4,09:00-09:50A,MWF,BUSH 201,J Patrone,,Coreq: CHM 220L; C- in CHM 121/131 or instructor consent required
+Chemistry,Wtlist,-1 / 14 / (4),90076  CHM 220L 1,Organic Chemistry I Lab,2,2 :00-6 :00P,M,BUSH 205,J Patrone,,Coreq: CHM 220; Fee: $50
 Chemistry,Open,1 / 14 / (0),90077  CHM 220L 2,Organic Chemistry I Lab,2,2 :00-6 :00P,T,BUSH 205,E Vanable,,Coreq: CHM 220; Fee: $50
+Chemistry,Wtlist,0 / 14 / (2),90078  CHM 220L 3,Organic Chemistry I Lab,2,2 :00-6 :00P,W,BUSH 205,J Patrone,,Coreq: CHM 220; Fee: $50
 Chemistry,Filled,-1 / 14 / (0),90079  CHM 220L 4,Organic Chemistry I Lab,2,2 :00-6 :00P,R,BUSH 205,E Vanable,,Coreq: CHM 220; Fee: $50
 Chemistry,Open,4 / 10 / (0),90080  CHM 305 1,Physical Chemistry I,6,"1 :00-1 :50P
 2 :00-5 :00P","MWF    
@@ -174,33 +215,51 @@ Computer Science,Open,5 / 18 / (0),90104  CMS 380 H1X,Simulation Analysis & Desi
 Computer Science,Open,7 / 18 / (0),90105  CMS 395 H1X,Topic: Software Engineering,4,4 :00-5 :15P,TR,BUSH 302,R Elva,ECMP,Prereq: CMS 270
 Computer Science,Open,14 / 18 / (0),90106  CMS 450 H1X,Computer Networks,4,6 :45-8 :00P,MW,BUSH 102,K Kadiyala,,Prereq: CMS 330
 Computer Science,Open,12 / 18 / (0),90107  CMS 495 H1X,Topic: Distributed Systems,4,4 :00-5 :15P,MW,BUSH 102,K Kadiyala,,Prereq: CMS 270
+Communication,Wtlist,0 / 22 / (4),90108  COM 100 1,Intro Communication Studies,4,10:00-10:50A,MWF,CSS 229,B Sahm,,
+Communication,Wtlist,0 / 22 / (2),90109  COM 100 2,Intro Communication Studies,4,11:00-11:50A,MWF,CSS 229,B Sahm,,
+Communication,Wtlist,0 / 22 / (2),90110  COM 100 3,Intro Communication Studies,4,11:00-12:15P,TR,CSS 232,R Zhang,,
 Communication,Filled,0 / 11 / (0),90775  COM 100 H1X,Intro Communication Studies,4,4 :00-6 :30P,W,CSS 135,B Myslik,,
 Communication,Filled,0 / 11 / (0),90506  COM 100 H2X,Intro Communication Studies,4,4 :00-6 :30P,T,CSS 135,B Myslik,,
+Communication,Wtlist,0 / 11 / (2),90507  COM 203 H1X,Communication Ethics,4,4 :00-6 :30P,T,CSS 221,J Morrison,,
 Communication,Filled,-1 / 9 / (0),90508  COM 210 H1X,Public Speaking,4,4 :00-6 :30P,M,BUSH 212,S Hammonds,T,
 Communication,Filled,-2 / 10 / (0),90509  COM 210 H2X,Public Speaking,4,4 :00-6 :30P,T,BUSH 212,S Hammonds,T,
 Communication,Filled,0 / 22 / (0),90111  COM 212 1,Persuasion,4,2 :30-3 :45P,MW,CSS 121,R Zhang,,
 Communication,Open,2 / 11 / (0),90510  COM 212 H1X,Persuasion,4,6 :45-9 :15P,R,CSS 221,J Morrison,,
 Communication,Filled,0 / 22 / (0),90112  COM 220 1,Interpersonal Communication,4,10:00-10:50A,MWF,CSS 170,J Hammonds,,"Prereq: COM 100,"
 Communication,Filled,0 / 11 / (0),90811  COM 220 H1X,Interpersonal Communication,4,4 :00-6 :30P,M,CSS 135,B Myslik,,
+Communication,Wtlist,0 / 22 / (1),90113  COM 230 1,Listening,4,11:00-12:15P,TR,CSS 121,A Stone,,Major/Minor only
+Communication,Wtlist,0 / 11 / (3),90771  COM 230 H1X,Listening,4,4 :00-6 :30P,M,CSS 170,R Bommelje,,Blended instruction
+Communication,Wtlist,0 / 11 / (1),90772  COM 230 H2X,Listening,4,6 :45-9 :15P,M,CSS 170,R Bommelje,,Blended instruction
+Communication,Wtlist,0 / 22 / (2),90114  COM 240 1,Intercultural Communication,4,11:00-12:15P,TR,CSS 134,G Cavenaugh,,
 Communication,Open,1 / 11 / (0),90773  COM 240 H1X,Intercultural Communication,4,6 :45-9 :15P,T,CSS 134,J Morrison,C/HGC,
+Communication,Wtlist,-1 / 17 / (3),90706  COM 285 1,Research Methods Comm,4,11:00-11:50A,MWF,CSS 170,J Hammonds,,SI skills course
+Communication,Wtlist,0 / 17 / (2),90707  COM 285 2,Research Methods Comm,4,1 :00-2 :15P,MW,CSS 121,R Zhang,,SI skills course
 Communication,Filled,0 / 7 / (0),90806  COM 285 3X,Research Methods Comm,4,2 :00-3 :15P,TR,BEAL 1,R Zhang,,SI skills course
 Communication,Filled,0 / 8 / (0),90708  COM 285 H1X,Research Methods Comm,4,4 :00-6 :30P,R,CSS 118,J Morrison,,SI skills course
 Communication,Open,2 / 8 / (0),90709  COM 285 H2X,Research Methods Comm,4,6 :45-9 :15P,M,CSS 134,D Painter,,SI skills course
+Communication,Wtlist,0 / 22 / (1),90115  COM 302 1,New Media & Pub Relations,4,2 :00-3 :15P,TR,CSS 118,B Sahm,,PR concentration
 Communication,Open,2 / 22 / (0),90116  COM 318 1,Contemporary PR,4,2 :30-3 :45P,MW,CSS 230,B Myslik,,PR concentration
 Communication,Filled,-1 / 14 / (0),90513  COM 318 H1X,Contemporary PR_CE,4,6 :45-9 :15P,T,REX 1,D Painter,,PR concentration; CE course
+Communication,Wtlist,-1 / 11 / (3),90514  COM 325 H1X,Communication Campaigns_CE,4,4 :00-6 :30P,R,CSS 230,S Parsloe,,Health and PR concentrations; SE elective; SI elective skills course; CE course
 Communication,Filled,0 / 11 / (0),90774  COM 327 H1X,Servant-Leadership,4,6 :45-9 :15P,R,CSS 170,R Bommelje,,Org Com concentration; blended instruction
 Communication,Open,2 / 15 / (0),90516  COM 330 H1X,Health Communication,4,6 :45-9 :15P,W,CSS 170,S Parsloe,,Health Com concentration
+Communication,Wtlist,0 / 22 / (1),90710  COM 395 1,Topic: Market Research,4,1 :00-3 :30P,W,ORLAN 213,B Sahm,,PR concentration
 Communication,Open,2 / 13 / (0),90711  COM 395 H1X,Topic: Destructive Workplace,4,4 :00-6 :30P,W,CSS 230,M Garcia,,Org Com concentration; blended instruction
 Communication,Open,3 / 8 / (0),90776  COM 400 H1X,Advan Projects Comm Studies,4,6 :45-9 :15P,M,CSS 135,A Stone,,Prereq: COM 295 or instructor consent; blended instruction
+Communication,Wtlist,-1 / 18 / (1),90117  COM 480 1,SR Seminar in Communication,4,2 :00-3 :15P,TR,CSS 135,M Garcia,,COM Seniors only
 Communication,Filled,0 / 11 / (0),90518  COM 480 H1X,SR Seminar in Communication,4,4 :00-6 :30P,T,CSS 121,G Cavenaugh,,COM Seniors only
 Communication,Filled,0 / 15 / (0),90935  COM 480 H2X,SR Seminar in Communication,4,4 :00-6 :30P,T,CSS 167,M Garcia,,COM Seniors only
+Economics,Wtlist,0 / 21 / (1),90125  ECO 121 1,Econ of Contemporary Issues,4,11:00-12:15P,TR,CSS 135,B Balak,,AMST elective
 Economics,Filled,0 / 22 / (0),90861  ECO 126 1,Economics & Public Policy,4,11:00-11:50A,MWF,CSS 121,M Robertson,,Suitable for all majors.  Not open to students enrolled or having completed ECO 202.
 Economics,Filled,0 / 20 / (0),90934  ECO 126 2,Economics & Public Policy,4,10:00-10:50A,MWF,CSS 121,M Robertson,,
 Economics,Filled,0 / 20 / (0),90126  ECO 202 1,Econ in Historical Perspective,4,11:00-12:15P,TR,CSS 170,Z Peng,,IR core; PPE core; SE elective
 Economics,Filled,0 / 20 / (0),90127  ECO 202 2,Econ in Historical Perspective,4,2 :00-3 :15P,TR,BUSH 164,Z Peng,,IR core; PPE course; SE elective
 Economics,Filled,0 / 20 / (0),90704  ECO 202 3,Econ in Historical Perspective,4,3 :30-4 :45P,TR,CSS 170,H Kypraios,,IR core; PPE course; SE elective
 Economics,Filled,0 / 8 / (0),90803  ECO 202 H1X,Econ in Historical Perspective,4,5 :20-6 :35P,MW,CSS 221,H Kypraios,H; HLCK,CLA: IR core; PPE core; SE elective
+Economics,Cancelled,20 / 20 / (0),90128  ECO 203 1,Prin Micro & Macro Economics,4,TBA,TBA,,,,Prereq: ECO 202; IR core; PPE core; LACs elective
+Economics,Cancelled,0 / 0 / (0),90129  ECO 203 2,Prin Micro & Macro Economics,4,TBA,TBA,,,,Prereq: ECO 202; IR core; PPE core; LACS elective
 Economics,Open,2 / 20 / (0),90130  ECO 203 3,Prin Micro & Macro Economics,4,2 :00-3 :15P,TR,BUSH 176,S Sen,,Prereq: ECO 202; IR core; PPE course; SE elective; LACS elective
+Economics,Cancelled,0 / 0 / (0),90131  ECO 221 1,Statistics for Economics,5,TBA,TBA,,,MCMP,Prereqs: second-year standing; ECO Majors: ECO 202; SE Majors: ECO 121 and SE 220
 Economics,Open,1 / 20 / (0),90132  ECO 221 2,Statistics for Economics,5,"12:00-12:50P
 2 :30-3 :45P","W      
 MW","CSS 133
@@ -208,6 +267,7 @@ CSS 170",M Vidovic,MCMP,Prereqs: second-year standing; ECO Majors: ECO 202; SE M
 Economics,Open,6 / 20 / (0),90134  ECO 303 1,Intermediate Microeconomics,4,11:00-12:15P,TR,CSS 221,M Vidovic,,"Preqs: ECO 202, ECO 203, and MAT 110; IR elective"
 Economics,Open,12 / 20 / (0),90135  ECO 304 1,Intermediate Macroeconomics,4,1 :00-2 :15P,MW,CSS 134,A Voicu,,Prereq: ECO 202 and ECO 203;  IR elective; PPE elective
 Economics,Filled,-1 / 11 / (0),90524  ECO 304 H1X,Intermediate Macroeconomics,4,6 :45-9 :15P,T,CSS 135,S Sen,,Prereq: ECO 202 and ECO 203;  IR elective; PPE elective
+Economics,Wtlist,-1 / 20 / (1),90136  ECO 306 1,Monetary Economics,4,2 :00-3 :15P,TR,CSS 230,H Kypraios,,"Prereqs: ECO 202 or ECO 212, and ECO 203 or ECO 213; INAF elective; IR elective; PPE elective"
 Economics,Filled,0 / 20 / (0),90137  ECO 308 1,European Economies,4,11:00-12:15P,TR,SULLV HSE,A Voicu,,Prereqs: ECO 202 and ECO 203; IR elective; PPE elective
 Economics,Open,6 / 20 / (0),90138  ECO 312 1,Alt Econ Perspectives,4,1 :00-3 :30P,M,CSS 232,Z Peng,,"Prereqs: ECO 202, ECO 203 (or BUS 233), and ECO 303; IR elective;"
 Economics,Open,2 / 14 / (0),90716  ECO 351 H1X,Economic Development,4,6 :45-9 :15P,W,CSS 229,S Sen,,Prereqs: ECO 202 and ECO 203
@@ -235,6 +295,7 @@ Education,Filled,-1 / 10 / (0),90383  RED 409 1X,Different Lit & Content Instr,4
 Education,Filled,-1 / 10 / (0),90589  RED 409L H1X,Reading Field Experience,4,TBA,TBA,,"J Hewit                                                     , J Manak",,Coreqs: EDU 406 and RED 409
 English,Open,2 / 15 / (0),90147  ENG 190 1X,Txt/Cont: Literary Disasters,4,11:00-11:50A,MWF,ORLAN 105,A Parziale,L/HLIT,AMST or SWAG elective
 English,Open,1 / 15 / (0),90148  ENG 190 2X,Txt/Cont:10 Amazing Books,4,11:00-12:15P,TR,ORLAN 215,J Jones,L/HLIT,
+English,Wtlist,0 / 3 / (2),90537  ENG 190 H1X,Txt/Context:Visual Narrative,4,6 :45-9 :15P,T,ORLAN 213,M O'Sullivan,L/HLIT,
 English,Open,3 / 15 / (0),90149  ENG 203 1X,BritLitPre1900: Brit Humour,4,11:00-12:15P,TR,ORLAN 105,B Hudson,,
 English,Open,1 / 18 / (0),90150  ENG 212 1X,AmLitPos1900:Am Shrt Stry,4,1 :00-2 :15P,MW,ORLAN 105,P Reich,,AMST elective
 English,Filled,0 / 5 / (0),90538  ENG 231 H1X,Med&Lit:Illness Narrative,4,6 :45-9 :15P,W,OLIN 211,A Parziale,L/HLIT,SWAG elective
@@ -245,22 +306,30 @@ English,Open,1 / 13 / (0),90790  ENG 321 1X,TranLit: Transnational Futures,4,1 :
 English,Open,1 / 10 / (0),90153  ENG 345 1X,AmLit: Off the Grid,4,3 :30-4 :45P,TR,ORLAN 105,J Jones,,
 English,Filled,-4 / 13 / (0),90154  ENG 346 1X,BritLit: Dungeons/Dragons,4,10:00-10:50A,MWF,ORLAN 215,J Mathews,,
 English,Filled,0 / 16 / (0),90155  ENGW 140 01,Writing About:Cultural Classrm,4,10:00-10:50A,MWF,ORLAN 113,A Zimmermann,WCMP,
+English,Wtlist,-2 / 16 / (1),90164  ENGW 140 02,Writing About:Cultural Classrm,4,12:00-12:50P,MWF,ORLAN 113,A Zimmermann,WCMP,
 English,Filled,0 / 16 / (0),90165  ENGW 140 03,Writing About:Cultural Classrm,4,1 :00-1 :50P,MWF,ORLAN 113,A Zimmermann,WCMP,
 English,Open,2 / 16 / (0),90166  ENGW 140 04,Writing About: Wicked Problems,4,10:00-10:50A,MWF,ORLAN 115,C Littler,WCMP/ECMP,
 English,Filled,-2 / 16 / (0),90167  ENGW 140 05,Writing About: Wicked Problems,4,11:00-11:50A,MWF,ORLAN 115,C Littler,WCMP/ECMP,
+English,Wtlist,0 / 16 / (1),90168  ENGW 140 06,Writing About: Movies,4,2 :00-3 :15P,TR,ORLAN 115,J Driggers,WCMP,
+English,Wtlist,0 / 16 / (2),90169  ENGW 140 07,Writing About: Movies,4,1 :00-2 :15P,MW,ORLAN 115,J Driggers,WCMP,
 English,Filled,0 / 16 / (0),90170  ENGW 140 08,Writing About: Movies,4,2 :30-3 :45P,MW,ORLAN 115,J Driggers,WCMP,
 English,Filled,0 / 16 / (0),90171  ENGW 140 09,Writing About: Friendship,4,11:00-12:15P,TR,ORLAN 115,T Pyle,WCMP,
 English,Filled,0 / 16 / (0),90156  ENGW 140 10,Writing About: Comics,4,2 :30-3 :45P,MW,ORLAN 205,J Carnes,WCMP,
 English,Filled,0 / 16 / (0),90157  ENGW 140 11,Writing About: Comics,4,1 :00-2 :15P,MW,ORLAN 205,J Carnes,WCMP,
 English,Open,1 / 16 / (0),90158  ENGW 140 12,Writing About: Bad Breakups,4,08:00-08:50A,MWF,ORLAN 215,J Mathews,WCMP,
+English,Wtlist,-1 / 16 / (1),90159  ENGW 140 13,Writing About:(Hating) Poetry,4,2 :00-3 :15P,TR,OLIN 211,B Hudson,WCMP,
 English,Open,1 / 16 / (0),90160  ENGW 140 14,Writing About: Sports,4,11:00-12:15P,TR,ORLAN 113,D Paul,WCMP,
+English,Wtlist,1 / 16 / (2),90161  ENGW 140 15,Writing About:Business Narr,4,2 :30-3 :45P,MW,OLIN VAN HOUTEN,W Boles,WCMP,
 English,Filled,-1 / 16 / (0),90163  ENGW 140 17,Writing About:Lang & Culture,4,2 :00-3 :15P,TR,ORLAN 105,M Cheng,WCMP,
+English,Wtlist,0 / 14 / (1),90172  ENGW 167 1X,Intro to Creative Writing,4,10:00-10:50A,MWF,ORLAN 105,D Paul,A/HART,
 English,Filled,-1 / 13 / (0),90173  ENGW 167 2X,Intro to Creative Writing,4,2 :00-3 :15P,TR,ORLAN 113,C Frost,A/HART,
 English,Filled,-1 / 5 / (0),90542  ENGW 167 H1X,Intro to Creative Writing,4,4 :00-6 :30P,R,ORLAN 115,D Paul,A/HART,
 English,Open,1 / 11 / (0),90543  ENGW 217 H1X,Intro to Professional Writing,4,4 :00-6 :30P,W,ORLAN 113,M Cheng,,
 English,Filled,0 / 7 / (0),90544  ENGW 267 H1X,Wrt Topics/Tech:Visual Poetry,4,6 :45-9 :15P,W,ORLAN 115,V Aggarwal,A/HART,Prereq: ENG 140
+English,Wtlist,-1 / 9 / (1),90174  ENGW 360 1X,Wrtrs Blshlf: Microfiction,4,1 :00-3 :30P,W,WAR 201,M Forsythe,,
 English,Open,1 / 9 / (0),90551  ENGW 363 H1X,Fict Wkshp: Writers/Readers,4,6 :45-9 :15P,R,ORLAN 113,V Brown,,Prereq: ENGW 167 or instructor consent
 English,Open,1 / 5 / (0),90175  ENGW 368 1X,Playwriting Workshop,4,11:00-11:50A,MWF,REX 1,W Boles,,
+English,Wtlist,-1 / 12 / (3),90176  ENGW 374 1X,Editing Essentials,4,2 :00-3 :15P,TR,ORLAN 213,M Forsythe,,
 English,Open,1 / 12 / (0),90552  ENGW 380 H1X,Language Studies,4,6 :45-9 :15P,M,ORLAN 115,M Cheng,,Prereq: WCMP Competency
 English,Open,1 / 7 / (0),90553  ENGW 460 H1X,The Writer's Portfolio,4,4 :00-6 :30P,T,ORLAN 205,C Frost,,
 Environmental Studies,Filled,-2 / 20 / (0),90177  ENV 189 1,Envir Crisis in Cultural Cntxt,4,11:00-11:50A,MWF,BEAL 2,L Poole,,Priority to ENV Majors and ENV Exploring Majors
@@ -291,6 +360,7 @@ Modern Languages & Literatures,Open,3 / 15 / (0),90087  CHN 201 1,Intermediate C
 Modern Languages & Literatures,Open,13 / 15 / (0),90088  CHN 202 1,Intermediate Chinese II,4,11:00-11:50A,MWF,OLIN 211,L Ren,FCMP,Prereq: CHN 201 or no more than 4 years high school Chinese; counts toward the Asian Studies Major/Minor
 Modern Languages & Literatures,Open,4 / 15 / (0),90089  CHN 251 1,Intermed CHN Conversation I,1,1 :00-1 :50P,R,HAUCK 112,L Ren,,Prereq: CHN 151; Coreq: CHN 201
 Modern Languages & Literatures,Open,9 / 15 / (0),90090  CHN 301 1,Advanced Chinese I,4,11:00-12:15P,TR,HAUCK 111,L Ren,FCMP,Prereq: CHN 202 or no more than 3 years high school Chinese; counts toward the Asian Studies Major/Minor
+Modern Languages & Literatures,Cancelled,0 / 0 / (0),90091  CHN 302 1,Advanced Chinese II,4,TBA,TBA,,,FCMP,Prereq: CHN 301 or no more than 3 years high school Chinese; counts toward the Asian Studies Major/Minor
 Modern Languages & Literatures,Open,11 / 15 / (0),90858  CHN 401 1,Advanced Chinese III,4,1 :00-2 :15P,MW,HAUCK 110,L Wei,,
 Modern Languages & Literatures,Open,1 / 16 / (0),90185  FRN 101 1,Elementary French I,5,"10:00-10:50A
 10:00-10:50A","MWF    
@@ -322,10 +392,12 @@ Modern Languages & Literatures,Filled,0 / 16 / (0),90446  SPN 101 2,Elementary S
 10:00-10:50A","MW     
 TR","CSS 221
 HAUCK 112",Y Smith,,
+Modern Languages & Literatures,Wtlist,1 / 16 / (1),90447  SPN 101 3,Elementary Spanish I,5,11:00-11:50A,MTWR,OLIN 104,R Lilienthal,,
 Modern Languages & Literatures,Open,1 / 16 / (0),90448  SPN 101 4,Elementary Spanish I,5,12:00-12:50P,MTWR,OLIN 104,R Lilienthal,,
 Modern Languages & Literatures,Filled,0 / 16 / (0),90449  SPN 101 5,Elementary Spanish I,5,1 :00-1 :50P,MTWR,HAUCK 113,D Rahimighazikalayeh,,
 Modern Languages & Literatures,Open,1 / 16 / (0),90450  SPN 101 6,Elementary Spanish I,5,2 :00-2 :50P,MTWR,HAUCK 113,D Rahimighazikalayeh,,
 Modern Languages & Literatures,Filled,-1 / 8 / (0),90955  SPN 101 H1X,Elementary Spanish I,4,4 :00-5 :15P,MW,HAUCK 111,J Fischer-Blenis,,
+Modern Languages & Literatures,Wtlist,4 / 16 / (1),90451  SPN 102 1,Elementary Spanish II,5,10:00-10:50A,MTWR,CSS 231,D Rahimighazikalayeh,,Prereq: SPN 101 or no more than 2 years of high school Spanish
 Modern Languages & Literatures,Open,1 / 16 / (0),90452  SPN 102 2,Elementary Spanish II,5,"11:00-11:50A
 11:00-11:50A","MW     
 TR","CSS 221
@@ -337,10 +409,14 @@ HAUCK 112",Y Smith,,Prereq: SPN 101 or no more than 2 years of high school Spani
 Modern Languages & Literatures,Filled,0 / 16 / (0),90454  SPN 102 4,Elementary Spanish II,5,1 :00-1 :50P,MTWR,OLIN 104,R Lilienthal,,Prereq: SPN 101 or no more than two years of high school Spanish
 Modern Languages & Literatures,Open,1 / 16 / (0),90455  SPN 102 5,Elementary Spanish II,5,2 :00-2 :50P,MTWR,OLIN 104,R Lilienthal,,Prereq: SPN 101 or no more than 2 years of high school Spanish
 Modern Languages & Literatures,Open,4 / 16 / (0),90926  SPN 102 6,Elementary Spanish II,5,11:00-11:50A,MTWR,CSS 231,D Rahimighazikalayeh,,
+Modern Languages & Literatures,Cancelled,0 / 0 / (0),90927  SPN 102 7,Elementary Spanish II,5,TBA,TBA,,,,
 Modern Languages & Literatures,Open,3 / 16 / (0),90929  SPN 102 8,Elementary Spanish II,5,10:00-10:50A,MTWR,OLIN 104,S Alzate,,
 Modern Languages & Literatures,Open,1 / 16 / (0),90456  SPN 110 1,Review of Elementary Spanish,4,10:00-10:50A,MWF,HAUCK 112,M Paniagua-Tejo,,Prereq: SPN 102 or no more than 3 years high school Spanish
+Modern Languages & Literatures,Cancelled,0 / 0 / (0),90457  SPN 110 2,Review of Elementary Spanish,4,TBA,TBA,,,,Prereq: SPN 102 or no more than 3 years of high school Spanish
 Modern Languages & Literatures,Open,1 / 16 / (0),90458  SPN 201 1,Intermediate Spanish I,4,08:00-08:50A,MWF,HAUCK 112,M Paniagua-Tejo,FCMP,Prereq: SPN 102 or no more than three years of high school Spanish; counts toward the Spanish Major/Minor
 Modern Languages & Literatures,Filled,0 / 16 / (0),90459  SPN 201 2,Intermediate Spanish I,4,10:00-10:50A,MWF,HAUCK 111,J Holguin-Intriago,FCMP,Prereq: SPN 102 or no more than 3 years of high school Spanish; counts toward the Spanish Major/Minor
+Modern Languages & Literatures,Wtlist,0 / 16 / (4),90460  SPN 201 3,Intermediate Spanish I,4,11:00-11:50A,MWF,HAUCK 111,J Holguin-Intriago,FCMP,Prereq: SPN 102 or no more than 3 years of high school Spanish; counts toward the Spanish Major/Minor
+Modern Languages & Literatures,Wtlist,2 / 16 / (1),90461  SPN 201 4,Intermediate Spanish I,4,12:00-12:50P,MWF,HAUCK 111,J Holguin-Intriago,FCMP,Prereq: SPN 102 or no more than 3 years of high school Spanish; counts toward the Spanish Major/Minor
 Modern Languages & Literatures,Filled,0 / 16 / (0),90462  SPN 201 5,Intermediate Spanish I,4,1 :00-1 :50P,MWF,HAUCK 111,J Holguin-Intriago,FCMP,Prereq: SPN 102 or no more than 3 years of high school Spanish; counts toward the Spanish Major/Minor
 Modern Languages & Literatures,Open,3 / 16 / (0),90463  SPN 201 6,Intermediate Spanish I,4,2 :00-2 :50P,MWF,OLIN 319,M Kupetz,FCMP,Prereq: SPN 102 or no more than three years of high school Spanish; counts toward the Spanish Major/Minor
 Modern Languages & Literatures,Filled,0 / 16 / (0),90863  SPN 201 7,Intermediate Spanish I,4,1 :00-1 :50P,MWF,OLIN 319,M Kupetz,FCMP,Prereq: SPN 102 or no more than three years of high school Spanish; counts toward the Spanish Major/Minor
@@ -348,8 +424,10 @@ Modern Languages & Literatures,Filled,-1 / 16 / (0),90864  SPN 201 8,Intermediat
 Modern Languages & Literatures,Open,9 / 16 / (0),90928  SPN 201 9,Intermediate Spanish I,4,12:00-12:50P,MWF,HAUCK 106,S Alzate,,
 Modern Languages & Literatures,Filled,-1 / 8 / (0),90957  SPN 201 H1X,Intermediate Spanish I,4,4 :00-5 :15P,TR,HAUCK 112,J Fischer-Blenis,,
 Modern Languages & Literatures,Open,1 / 16 / (0),90742  SPN 202 1,Intermediate Spanish II,4,11:00-11:50A,MWF,HAUCK 112,M Paniagua-Tejo,FCMP,SPN 201 or no more than 4 years high school Spanish
+Modern Languages & Literatures,Cancelled,0 / 0 / (0),90743  SPN 202 2,Intermediate Spanish II,4,TBA,TBA,,,FCMP,SPN 201 or no more than 4 years high school Spanish
 Modern Languages & Literatures,Filled,0 / 3 / (0),90835  SPN 203 A1,Intermed SPN: Comp & Conver,4,TBA,TBA,,P Tome,,
 Modern Languages & Literatures,Open,7 / 16 / (0),90464  SPN 210R 1,Review of Intermediate Spanish,4,10:00-10:50A,MWF,OLIN 319,M Kupetz,,Prereq: Instructor consent only; counts toward the Spanish Major/Minor
+Modern Languages & Literatures,Cancelled,0 / 0 / (0),90465  SPN 222 1,Spanish for Heritage Speakers,4,TBA,TBA,,,FCMP,For Heritage Speakers only
 Modern Languages & Literatures,Open,1 / 16 / (0),90466  SPN 291 1,Advanced Spanish Communication,4,11:00-12:15P,MW,OLIN 319,M Kupetz,FCMP,"Prereqs: SPN 201, SPN 202, or SPN 210R or consent"
 Modern Languages & Literatures,Open,5 / 16 / (0),90467  SPN 291 2,Advanced Spanish Communication,4,11:00-12:15P,TR,HAUCK 106,P Tome,FCMP,"Prereqs: SPN 201, SPN 202, or SPN 210R or consent"
 Modern Languages & Literatures,Open,2 / 16 / (0),90468  SPN 301 1,Adv Spanish thru Lit & Film_CE,4,1 :00-2 :15P,MW,HAUCK 106,P Tome,,"Prereq: SPN 291; LACS elective, CE course"
@@ -370,12 +448,15 @@ History,Open,2 / 15 / (0),90206  HIS 337 1,Law & Order in Medieval Europe,4,2 :3
 History,Open,2 / 15 / (0),90823  HIS 355 1,Modern Latin American History,4,1 :00-2 :15P,MW,CSS 226,J Savala,,LACS elective; IR elective
 Honors Degree Program,Open,1 / 18 / (0),90781  HON 300A 1,"HonSem:Europe, Art, Empire",4,09:30-10:45A,TR,REX 1,S Libby,,
 Honors Degree Program,Open,2 / 18 / (0),90797  HON 300A 2,HonSem:Writing for Children_CE,4,09:30-10:45A,TR,ORLAN 105,M Forsythe,,"ENG Major elective, CE course"
+Honors Degree Program,Wtlist,0 / 21 / (1),90783  HON 350HS 1,HonSem:Biomedical Enhance,4,09:30-10:45A,TR,CSS 170,"J Cook                                                      , P Bernal",,
 Honors Degree Program,Open,6 / 18 / (0),90828  HON 400 1,Honors Capstone,4,09:30-10:45A,TR,SULLV HSE,E Smaw,,
 Information Technology,Filled,0 / 12 / (0),90748  IFT 107 H1X,Using PowerPoint/Graphics,1,6 :45-8 :30P,MW,OLIN 225,L Watson,,"Sept 17 to October 7 (Class meets 9/18, 9/23, 9/25, 9/30, 10/2, 10/7)"
 Information Technology,Filled,0 / 12 / (0),90749  IFT 107 H2X,Using PowerPoint/Graphics,1,6 :45-8 :30P,MW,OLIN 225,L Watson,,"October 16 to Nov 4 (Class meets 10/16, 10/21, 10/23, 10/28, 10/30, 11/4) (Wed start)"
 Information Technology,Open,4 / 10 / (0),90747  IFT 110 H1X,Using Excel Spreadsheets,1,4 :45-6 :30P,TR,OLIN 225,I Walters,,"Aug 26 to Sept 16 (Class meets 8/27, 8/29, 9/3, 9/5, 9/10, 9/12)"
 Information Technology,Open,1 / 11 / (0),90750  IFT 110 H2X,Using Excel Spreadsheets,1,4 :45-6 :30P,TR,OLIN 225,I Walters,,"Sept 17 to October 7 (Class meets 9/17, 9/19, 9/24, 9/26, 10/1, 10/3)"
 Information Technology,Filled,0 / 13 / (0),90751  IFT 110 H3X,Using Excel Spreadsheets,1,4 :45-6 :30P,TR,OLIN 225,I Walters,,"Nov 5 to Nov 25 (Class meets 11/5, 11/7, 11/12, 11/14, 11/19, 11/21)"
+Information Technology,Wtlist,0 / 12 / (2),90752  IFT 112 H1X,Creating Web Home Pages,1,6 :45-8 :30P,TR,OLIN 225,L Watson,,"Nov 5 to Nov 25 (Class meets 11/5, 11/7, 11/12, 11/14, 11/19, 11/21)"
+Information Technology,Wtlist,0 / 11 / (2),90753  IFT 120 H1X,Design with Photoshop,1,4 :45-6 :30P,TR,OLIN 220,B Lehner,,"Aug 26 to Sept 16 (Class meets 8/27, 8/29, 9/3, 9/5, 9/10, 9/12)"
 Information Technology,Open,3 / 10 / (0),90754  IFT 120 H2X,Design with Photoshop,1,4 :45-6 :30P,MW,OLIN 220,S Bokash,,"Sept 17 to October 7 (Class meets 9/18, 9/23, 9/25, 9/30, 10/2, 10/7)"
 Information Technology,Open,6 / 8 / (0),91199  IFT 120 H3X,Design with Photoshop,1,6 :45-8 :30P,TR,OLIN 220,S Bokash,,"Nov 5 to Nov 25 (Class meets 11/5, 11/7, 11/12, 11/14, 11/19, 11/21)"
 Information Technology,Filled,0 / 10 / (0),90755  IFT 300 H1X,Digital Video I,1,6 :45-8 :30P,MW,OLIN 220,A Sugar,,"October 16 to Nov 4 (Class meets 10/16, 10/21, 10/23, 10/28, 10/30, 11/4). Not for CMC students."
@@ -423,11 +504,15 @@ Mathematics,Filled,0 / 20 / (0),90235  MAT 195 2,Topic: Statistical Reasoning,4,
 10:00-10:50A","MF     
 W","BUSH 302
 BUSH 301",S Boyd,MCMP,
+Mathematics,Wtlist,1 / 20 / (1),90236  MAT 195 3,Topic: Financial Reasoning,4,12:00-12:50P,MWF,BUSH 164,G Rejniak,MCMP,
 Mathematics,Filled,0 / 20 / (0),90237  MAT 195 4,Topic: Financial Reasoning,4,1 :00-1 :50P,MWF,BUSH 164,G Rejniak,MCMP,
 Mathematics,Open,1 / 24 / (0),90238  MAT 219 1,Probability & Statistics,4,10:00-10:50A,MWF,BUSH 201,J Yellen,MCMP,Prereq: MAT 112
 Mathematics,Open,3 / 20 / (0),90239  MAT 305 1,Ord Differential Equations,4,11:00-11:50A,MWF,BUSH 302,Z Teymuroglu,,Prereq: MAT 112
 Mathematics,Open,9 / 20 / (0),90240  MAT 330 1,Proof and Abstraction,4,2 :30-3 :20P,MWF,BUSH 202,R Vitray,,Prereqs: MAT 140 and any 200+ level MAT course
 Mathematics,Open,5 / 20 / (0),90241  MAT 440 1,Coding Theory,4,1 :00-2 :15P,MW,BUSH 208,M Anderson,,Prereq: MAT 330
+Mid Eastern & N African Stud,Cancelled,0 / 0 / (0),90822  MENA 295 1,Tpc:France-Algeria Politics,4,TBA,TBA,,,,Counts toward the MENA Minor; JWS elective: SWAG elective; INB elective with permission.
+Mid Eastern & N African Stud,Cancelled,0 / 0 / (0),90242  MENA 395 1,Tpc: France-Algeria Politics,4,TBA,TBA,,,,Counts toward the MENA Minor; JWS elective: SWAG elective; INB elective with permission.
+Mid Eastern & N African Stud,Cancelled,0 / 0 / (0),90821  MENA 395 2,Tpc:France-Algeria Pol Lab,1,TBA,TBA,,,,Prereq: FRN 202 or instructor consent. Optional one-hour course taught in French reviewing French-language texts. Companion course to 90242 MENA 395 1 Tpc. France-Algeria Politics.
 Music,Filled,-5 / 12 / (0),90262  MUS 151 1,Theory 1,4,11:00-11:50A,MWF,KEENE 101,D Crozier,,Coreq: MUS 153
 Music,Open,3 / 10 / (0),90263  MUS 153 1,Keyboard Harmony 1,2,09:30-10:45A,TR,KEENE 104,G Cook,,Coreq: MUS 151
 Music,Open,2 / 10 / (0),90264  MUS 153 2,Keyboard Harmony 1,2,11:00-12:15P,TR,KEENE 104,G Cook,,Coreq: MUS 151
@@ -435,12 +520,15 @@ Music,Open,2 / 3 / (0),90265  MUS 223 1X,Singing Diction: Eng & Ital,2,11:00-11:
 Music,Open,1 / 7 / (0),90266  MUS 227 1X,Song Writing I,4,1 :00-2 :15P,MW,KEENE 103,D Flick,,
 Music,Filled,-2 / 12 / (0),90267  MUS 251 1,Theory 3,4,10:00-10:50A,MWF,KEENE 101,D Crozier,A/HART,Prereq: MUS 152 or equivalent
 Music,Open,1 / 7 / (0),90268  MUS 290 1X,Basic Conducting,4,11:00-12:15P,TR,KEENE 119,J Sinclair,,
+Music,Wtlist,-1 / 7 / (4),90269  MUS 292 1X,Intro to Music Business,4,2 :00-3 :15P,TR,KEENE 101,C Archard,,
+Music,Wtlist,-1 / 5 / (1),90799  MUS 295 1X,Topic: Music Technology I,4,2 :30-3 :45P,MW,KEENE 104,J Ray,,
 Music,Filled,0 / 6 / (0),90800  MUS 301 1X,Recording Practicum,2,TBA,TBA,,J Ray,,
 Music,Open,3 / 6 / (0),90801  MUS 335 1X,Rock Music in Time and Place,4,3 :30-4 :45P,TR,KEENE 101,C Archard,,Prereq: MUS 152 or equivalent
 Music,Open,5 / 6 / (0),90270  MUS 341 1X,Methods: Brass,2,09:00-10:15A,F,KEENE 119,T Linn,,
 Music,Open,2 / 6 / (0),90271  MUS 355 1X,Composition Practicum,2,TBA,TBA,,D Crozier,,Prereq: MUS 152 or equivalent
 Music,Open,3 / 15 / (0),90272  MUS 361 1X,Music Hist :Ancient to Baroque,4,11:00-12:15P,TR,KEENE 101,J Grau,H,Prereq: MUS 152 or equivalent
 Music,Open,9 / 13 / (0),90273  MUS 361 2X,Music Hist :Ancient to Baroque,4,3 :30-4 :45P,TR,KEENE 103,R Witmer,H,Prereq: MUS 152 or equivalent
+Music,Cancelled,1 / 1 / (0),90274  MUS 372 1X,Survey of Jewish Music,4,TBA,TBA,,,,JWS elective
 Music,Open,1 / 6 / (0),90275  MUS 391 1X,Conducting Practicum,2,TBA,TBA,,J Sinclair,,Prereq: MUS 290
 Music,Filled,0 / 6 / (0),90276  MUS 393 1X,Piano Pedagogy I,4,1 :00-2 :15P,MW,KEENE 101,G Cook,,
 Music,Open,1 / 6 / (0),90802  MUS 395 1X,Topic: String Pedagogy,4,1 :00-2 :15P,MW,KEENE 119,J Roos,,
@@ -457,9 +545,12 @@ Health and Physical Education,Filled,0 / 8 / (0),90286  PEA 44 1,Beginning Golf,
 Health and Physical Education,Open,3 / 13 / (0),90287  PEA 44 2,Beginning Golf,0,2 :00-3 :50P,W,ASC LOBBY,N Arrowsmith,,
 Health and Physical Education,Open,1 / 25 / (0),90288  PEA 51 1,Co-Ed Basketball,0,2 :00-3 :50P,T,ASC 230,N Arrowsmith,,
 Health and Physical Education,Filled,-1 / 20 / (0),90289  PEA 54 1,Weight Training,0,10:00-10:50A,MW,ASC 138,S Pistor,,
+Health and Physical Education,Wtlist,0 / 20 / (4),90290  PEA 54 2,Weight Training,0,11:00-11:50A,MW,ASC 138,S Pistor,,
 Health and Physical Education,Open,2 / 15 / (0),90291  PEA 58 1,Canoeing,0,10:00-10:50A,MW,BOAT 1,M Bedsole,,
 Health and Physical Education,Open,1 / 10 / (0),90292  PEA 62 1,Sailing/Canoeing,0,1 :00-3 :00P,W,BOAT 1,D Herbster,,
+Health and Physical Education,Wtlist,0 / 10 / (8),90293  PEA 62 2,Sailing/Canoeing,0,1 :00-3 :00P,R,BOAT 1,D Herbster,,
 Health and Physical Education,Filled,-2 / 20 / (0),90295  PEA 73 1,Basic Yoga,0,11:00-11:50A,MW,ASC 139,T Portoghese,,Fee: $100
+Health and Physical Education,Wtlist,-4 / 20 / (3),90296  PEA 73 2,Basic Yoga,0,10:00-10:50A,MW,ASC 139,T Portoghese,,Fee: $100
 Health and Physical Education,Filled,0 / 20 / (0),90297  PEA 74 1,Power Yoga,0,1 :00-1 :50P,MW,ASC 139,T Portoghese,,Fee: $100
 Health and Physical Education,Open,2 / 20 / (0),90298  PEA 74 2,Power Yoga,0,2 :00-2 :50P,MW,ASC 139,T Portoghese,,Fee: $100
 Health and Physical Education,Open,3 / 20 / (0),90299  PEA 75 1,Beginning Pilates,0,09:30-10:20A,TR,ASC 139,J Chatelain,,Fee: $100
@@ -467,7 +558,16 @@ Health and Physical Education,Filled,-2 / 20 / (0),90300  PEA 75 2,Beginning Pil
 Health and Physical Education,Open,13 / 20 / (0),90301  PEA 76 1,Intermediate Pilates,0,3 :00-3 :50P,TR,ASC 139,J Chatelain,,Prereq: PEA 75; Fee: $100
 Health and Physical Education,Open,9 / 20 / (0),90302  PEA 80 1,Sports Pilates,0,11:00-11:50A,TR,ASC 139,J Chatelain,,Fee: $100
 Health and Physical Education,Filled,-1 / 24 / (0),90303  PED 101 1,Health & Wellness,4,08:00-09:15A,TR,ASC 109,D Pistor,BCMP,
+Health and Physical Education,Wtlist,0 / 24 / (3),90304  PED 101 10,Health & Wellness,4,1 :00-2 :15P,MW,ASC 109,R Morris,BCMP,
+Health and Physical Education,Wtlist,1 / 22 / (6),90305  PED 101 11,Health & Wellness,4,1 :00-2 :15P,MW,ASC 243,K Buckley,BCMP,
+Health and Physical Education,Wtlist,1 / 24 / (1),90306  PED 101 12,Health & Wellness,4,2 :00-3 :15P,TR,ASC 109,D Pistor,BCMP,
+Health and Physical Education,Wtlist,1 / 24 / (1),90308  PED 101 3,Health & Wellness,4,09:30-10:45A,TR,ASC 109,D Pistor,BCMP,
+Health and Physical Education,Wtlist,0 / 20 / (2),90309  PED 101 4,Health & Wellness,4,09:30-10:45A,TR,ASC 243,B Friscia,BCMP,
+Health and Physical Education,Wtlist,0 / 24 / (3),90310  PED 101 5,Health & Wellness,4,09:30-10:45A,TR,CSS 135,M Carlson,BCMP,
 Health and Physical Education,Filled,0 / 24 / (0),90311  PED 101 6,Health & Wellness,4,10:00-10:50A,MWF,ASC 109,R Morris,BCMP,
+Health and Physical Education,Wtlist,0 / 24 / (2),90312  PED 101 7,Health & Wellness,4,10:00-10:50A,MWF,ASC 243,K Simone,BCMP,
+Health and Physical Education,Wtlist,1 / 24 / (1),90313  PED 101 8,Health & Wellness,4,11:00-12:15P,TR,ASC 109,D Pistor,BCMP,
+Health and Physical Education,Wtlist,0 / 24 / (6),90314  PED 101 9,Health & Wellness,4,12:00-12:50P,MWF,ASC 109,R Morris,BCMP,
 Health and Physical Education,Filled,-1 / 22 / (0),90315  PED 201 1,Physiology of Exer/Perform,4,11:00-11:50A,MWF,ASC 243,R Morris,BCMP,
 Health and Physical Education,Filled,0 / 18 / (0),90792  PED 476 1,Coaching a Specific Sport,4,11:00-12:15P,TR,BOAT 1,K Buckley,,Third-year and senior standing
 Health and Physical Education,Open,24 / 25 / (0),90316  PEV 81 1,Varsity Cross Country,0,4 :00-6 :00P,MTWRF,ASC LOBBY,N Weyant,,
@@ -492,7 +592,9 @@ Physics,Open,9 / 24 / (0),90329  PHY 120 1,General Physics I,6,"10:00-10:50A
 R","BUSH 164
 BUSH 180",S Douguet,,Prereq: MAT 108 or higher
 Physics,Open,5 / 26 / (0),90330  PHY 130 1,Principles of Physics I,4,10:00-10:50A,MWF,BUSH 180,A Cannaday,,"Coreqs: PHY 130L, and MAT 111 or instructor consent"
+Physics,Cancelled,0 / 0 / (0),90931  PHY 130 2,Principles of Physics I,4,TBA,TBA,,,,Coreqs: PHY 130L and MAT 111 or instructor consent
 Physics,Open,4 / 26 / (0),90713  PHY 130L 1,Principles of Physics I Lab,2,2 :30-6 :30P,W,BUSH 180,C Fuse,,Coreq: PHY 130
+Physics,Cancelled,0 / 0 / (0),90932  PHY 130L 2,Principles of Physics I Lab,2,TBA,TBA,,,,Coreq: PHY 130
 Physics,Open,5 / 18 / (0),90331  PHY 220 1,Math Methods Physical Sci I,4,1 :00-1 :50P,MWF,BUSH 180,C Fuse,,Prereq: MAT 112 or instructor consent required
 Physics,Open,6 / 18 / (0),90332  PHY 230 1,Modern Physics,4,08:00-08:50A,MWF,BUSH 180,S Douguet,,Prereq: PHY 131;Coreq: PHY 232
 Physics,Open,7 / 18 / (0),90333  PHY 232 1,Experimental Physics II,4,2 :00-6 :00P,T,BUSH 160,W Coyle,,Coreq: PHY 230
@@ -508,15 +610,23 @@ Political Science,Open,2 / 24 / (0),90342  POL 160 2,Intro to American Politics,
 Political Science,Open,1 / 16 / (0),90344  POL 220 1,Problems in Political Thought,4,11:00-12:15P,TR,OLIN 319,J Maskivker,,
 Political Science,Open,4 / 16 / (0),90345  POL 240B 1,Research Methods Political Sci,4,11:00-11:50A,MWF,CSS 232,E Tatari,,
 Political Science,Open,4 / 16 / (0),90346  POL 252 1,Am Civil Rights Law & Policy,4,10:00-10:50A,MWF,CSS 167,D Davison,,"SWAG elective; AAAS elective; AMST elective, PPE elective"
+Political Science,Wtlist,1 / 22 / (1),90347  POL 302 1,Politics of Global Poverty,4,11:00-12:15P,TR,CSS 229,D Chong,,Prereq: POL 100 or POL 130; IR elective; AAAS elective
 Political Science,Open,3 / 15 / (0),90348  POL 309 1,Global Democratization,4,2 :30-3 :45P,MW,CSS 221,D Boniface,,Prereq: POL 100 or POL 130; IR elective
 Political Science,Open,3 / 15 / (0),90350  POL 318 1,Applied Political Ethics,4,1 :00-3 :30P,W,CSS 118,J Maskivker,,PPE elective.
+Political Science,Wtlist,0 / 18 / (2),90351  POL 332 1,Int'l Human Rights_CE,4,2 :00-3 :15P,TR,CSS 170,D Chong,,SWAG elective; IR elective; CE course
 Political Science,Open,2 / 15 / (0),90352  POL 333 1,Sustainable Development Cases,4,09:00-09:50A,MWF,CSS 231,M Gunter,,SDEV core; IR elective
+Political Science,Cancelled,0 / 0 / (0),90353  POL 346 1,Voting & Elections,4,TBA,TBA,,,,Prereq: POL 160 or POL 161
 Political Science,Open,3 / 15 / (0),90354  POL 353 1,Foreign Policy of the US,4,08:00-09:15A,TR,CSS 167,J Davison,,IR elective; AMST elective
 Political Science,Filled,0 / 10 / (0),90355  POL 354 1,Model United Nations,4,11:00-11:50A,MWF,CSS 226,M Gunter,,"Prereq: POL 130, Fee: $150"
 Political Science,Open,6 / 15 / (0),90356  POL 365 1,Power In America,4,1 :00-2 :15P,MW,CSS 230,C Ebin,,AMST elective
 Political Science,Open,8 / 15 / (0),90794  POL 395 1,Topic: Social Movements_CE,4,2 :00-3 :15P,TR,CSS 134,C Ebin,,CE course
 Public Policy & Political Econ,Open,3 / 20 / (0),90357  PPE 119 1,Issues in Public Policy/Econ,4,11:00-11:50A,MWF,CSS 167,D Davison,,
+Psychology,Wtlist,0 / 24 / (1),90358  PSY 101 1,Intro to Psychology,4,1 :00-2 :15P,MW,BUSH 202,S Dunn,,Intended for Non-Majors
 Psychology,Filled,0 / 24 / (0),90359  PSY 101 2,Intro to Psychology,4,2 :30-3 :45P,MW,BUSH 308,J Queen,,Intended for Non-Majors
+Psychology,Wtlist,1 / 24 / (7),90360  PSY 150 1,Perspectives in Psychology I,4,3 :30-4 :45P,TR,HUME 101,"S Carnahan                                                  , P Harris",,"Designed for Majors/Minors. First-year, Second-year, Third-year standing."
+Psychology,Wtlist,-1 / 24 / (5),90361  PSY 150 2,Perspectives in Psychology I,4,3 :30-4 :45P,TR,BUSH 201,"P Harris                                                    , S Carnahan",,"Designed for Majors/Minors. First-year, Second-year, Third-year standing."
+Psychology,Wtlist,0 / 24 / (3),90362  PSY 150 3,Perspectives in Psychology I,4,3 :30-4 :45P,TR,BUSH 308,"A Luchner                                                   , S Carnahan",,"Designed for Majors/Minors. First-year, Second-year, Third-year standing."
+Psychology,Wtlist,0 / 18 / (3),90363  PSY 250 1,Stats & Rsch Meth I w/Lab,4,11:00-12:15P,TR,BUSH 212,A Davidson,MCMP,Co-Requisite: PSY 250L
 Psychology,Filled,0 / 18 / (0),90364  PSY 250 2,Stats & Rsch Meth I w/Lab,4,11:00-12:15P,TR,BUSH 164,J Houston,MCMP,Coreq: PSY 250L
 Psychology,Filled,0 / 18 / (0),90365  PSY 250L 1,Stats & Rsch Meth I Lab,2,2 :00-3 :15P,TR,BUSH 301,A Davidson,,Coreq: PSY 250
 Psychology,Filled,0 / 18 / (0),90366  PSY 250L 2,Stats & Rsch Meth I Lab,2,2 :00-3 :15P,TR,BUSH 301,J Houston,,Coreq: PSY 250
@@ -525,6 +635,11 @@ Psychology,Open,6 / 18 / (0),90368  PSY 255 2,Stats & Rsch Meth II w/Lab,4,2 :00
 Psychology,Open,1 / 18 / (0),90369  PSY 255L 1,Stats & Rsch Meth II Lab,2,11:00-12:15P,TR,BUSH 301,P Harris,,Prereq: PSY 250; Coreq: PSY 255
 Psychology,Open,6 / 18 / (0),90370  PSY 255L 2,Stats & Rsch Meth II Lab,2,11:00-12:15P,TR,CSS 133,J Queen,,Prereq: PSY 250; Coreq: PSY 255
 Psychology,Open,2 / 24 / (0),90371  PSY 302 1,CN: Brain & Language,4,08:00-09:15A,TR,BUSH 210,J Queen,,Prereq: PSY 155
+Psychology,Wtlist,0 / 24 / (6),90372  PSY 305 1,"BB: Sleep, Dreams & Behavior",4,1 :00-2 :15P,MW,BUSH 228,S Woodward,,Prereq: PSY 155
+Psychology,Wtlist,0 / 16 / (3),90584  PSY 309 1X,DV: Adolescent Devlpmnt_CE,4,4 :00-6 :30P,M,BUSH 308,A Davidson,,Prereq: CLA-PSY 150; Holt-PSY 101; CE course
+Psychology,Wtlist,0 / 24 / (1),90373  PSY 310 1,IS: Psychopathology,4,11:00-11:50A,MWF,BUSH 212,A Luchner,,Prereq: PSY 150
+Psychology,Wtlist,0 / 18 / (1),90374  PSY 322 1,CN:Cognitive Psychology w/Lab,4,10:00-10:50A,MWF,BUSH 176,S Woodward,,Prereq: PSY 155
+Psychology,Wtlist,0 / 18 / (1),90375  PSY 322L 1,CN:Cognitive Psychology Lab,2,2 :30-3 :45P,MW,BUSH 274,S Woodward,,Prereq: PSY 255; Coreq: PSY 322
 Psychology,Open,7 / 18 / (0),90376  PSY 328 1,DV:Developmental Psy w/Lab_CE,4,1 :00-2 :15P,MW,HUME 101,S Carnahan,,"Prereq: PSY 150, Coreq: PSY 328L; CE course"
 Psychology,Open,3 / 9 / (0),90377  PSY 328L 1,DV:Developmental Psy Lab_CE,2,09:00-10:50A,W,HUME 101,S Carnahan,,Prereq: PSY 255; Coreq: PSY 328; CE course
 Psychology,Open,4 / 9 / (0),90795  PSY 328L 2,DV:Development Psy Lab_CE,2,10:00-11:50A,W,HUME 101,S Carnahan,,"Prereq: PSY 255, Coreq: PSY 328, CE course"
@@ -582,6 +697,7 @@ Social  Entrepreneurship,Filled,-3 / 20 / (0),90732  SE 100 2,Social Ent: Leadin
 Social  Entrepreneurship,Filled,-1 / 20 / (0),90733  SE 100 3,Social Ent: Leading Change,4,12:00-12:50P,MWF,BUSH 212,Y Mesbah,,
 Social  Entrepreneurship,Open,4 / 20 / (0),90431  SE 220 1,Global Dev:Challenge/Changes,4,09:30-10:45A,TR,WAR 201,T Warnecke,,"AAAS core; SI topics core; ASIA, SWAG, or GBH elective"
 Social  Entrepreneurship,Open,4 / 20 / (0),90432  SE 220 2,Global Dev:Challenge/Changes,4,11:00-12:15P,TR,WAR 201,T Warnecke,,"AAAS core; SI topics core; ASIA, SWAG, or GBH elective"
+Social  Entrepreneurship,Wtlist,-1 / 20 / (1),90433  SE 300 1,Law & Ethics-Social Innov&Entr,4,11:00-11:50A,MWF,BUSH 202,J Balzac,ECMP,SI topics elective
 Social  Entrepreneurship,Filled,-2 / 20 / (0),90734  SE 305 1,Social Entrep Marketing,4,1 :00-2 :15P,MW,CSS 135,C McInnis-Bowers,,Prereq: SE 100 and ECO 121
 Social  Entrepreneurship,Open,4 / 18 / (0),90434  SE 320 1,Strategies for Changemakers_CE,4,2 :30-3 :45P,MW,BUSH 208,J Balzac,,Prereq: SE 100; CE course; SI skills core; SWAG elective; AAAS elective
 Social  Entrepreneurship,Filled,-1 / 20 / (0),90435  SE 345 1,Financing Social Entr,4,2 :00-3 :15P,TR,BUSH 228,F Robinson,,Prereq: SE 100 and MCMP
@@ -590,6 +706,7 @@ Social  Entrepreneurship,Open,7 / 20 / (0),90746  SE 395 2,Topic: SE Inside Comp
 Social  Entrepreneurship,Open,4 / 15 / (0),90737  SE 440 1,Planning/ Implement for SE,4,2 :30-3 :45P,MW,BUSH 102,F Robinson,,Prereqs: SE 220 and SE 345 and SE 320 or COM 331; seniors only
 Social Innovation,Open,4 / 22 / (0),90436  SI 200 1,Intro to Social Innovation_CE,4,1 :00-3 :30P,W,CSS 232,E Tatari,,CE course
 Sociology,Open,1 / 22 / (0),90437  SOC 108 1,Self & Society,4,10:00-10:50A,MWF,CSS 118,A McClure,,SWAG elective
+Sociology,Cancelled,0 / 0 / (0),90438  SOC 108 2,Self & Society,4,TBA,TBA,,,,SWAG elective
 Sociology,Open,3 / 22 / (0),90439  SOC 111 1,Social Problems,4,3 :30-4 :45P,TR,CSS 134,M Nichter,,"AAAS core; SI topics course; PPE, AMST, or SE elective"
 Sociology,Open,3 / 22 / (0),90441  SOC 201 1,The Sociological Perspective,4,2 :00-3 :15P,TR,CSS 229,S Gonzalez Guittar,,
 Sociology,Filled,-1 / 18 / (0),90442  SOC 301 1,Methodology,4,11:00-12:15P,TR,CSS 118,S Gonzalez Guittar,,Prereq: SOC 201 or instructor consent required; SI skills core
@@ -600,6 +717,7 @@ Sexuality Women's & Gender Std,Filled,0 / 13 / (0),90744  SWAG 295 H1X,Topic: Mo
 Sexuality Women's & Gender Std,Open,1 / 8 / (0),90475  SWAG 350 H1X,Feminist Methodology,4,4 :00-6 :30P,W,CSS 134,W Brandon,,SWAG core
 Theatre Arts & Dance,Filled,-1 / 16 / (0),90118  DAN 170 1,Ballet I,4,11:00-12:15P,TR,DANCE 1,J Loupe,PEA,Fee: $85.
 Theatre Arts & Dance,Open,1 / 16 / (0),90119  DAN 175 1,Tap Dance I,4,10:00-10:50A,MWF,DANCE 1,J Dygan,PEA,
+Theatre Arts & Dance,Wtlist,-1 / 8 / (4),90519  DAN 177 H1X,Jazz I,4,4 :00-6 :30P,R,DANCE 1,R Wilson,HART/PEA,
 Theatre Arts & Dance,Filled,0 / 16 / (0),90120  DAN 179 1,Modern I,4,2 :00-3 :15P,TR,DANCE 1,R Gerchman,PEA,
 Theatre Arts & Dance,Open,6 / 15 / (0),90121  DAN 203 1,Dance History,4,2 :30-3 :45P,MW,CSS 167,R Gerchman,,
 Theatre Arts & Dance,Open,1 / 10 / (0),90122  DAN 225 H1X,Dance Improvisation,4,4 :00-6 :30P,W,DANCE 1,R Lane,,
@@ -608,6 +726,8 @@ Theatre Arts & Dance,Open,9 / 12 / (0),90521  DAN 300 H1X,Dance Composition,4,4 
 Theatre Arts & Dance,Filled,-1 / 6 / (0),90522  DAN 370 H1X,Ballet III,4,4 :00-6 :30P,T,DANCE 1,K Stevens,A/HART/PEA,Fee: $85
 Theatre Arts & Dance,Open,7 / 10 / (0),90124  DAN 421 H1X,Dance Production II,2,4 :00-5 :15P,W,DANCE 1,R Gerchman,,Prereq: DAN 420
 Theatre Arts & Dance,Filled,0 / 14 / (0),90476  THE 111 1,Intro to Technical Theatre,4,11:00-12:15P,TR,ANNIE AUD,R Miller,,Fee: $85
+Theatre Arts & Dance,Wtlist,0 / 12 / (1),90477  THE 112 1,Fund of Theatrical Design,4,1 :00-2 :50P,MW,COST SHOP,L Cody-Rapport,,Fee: $85
+Theatre Arts & Dance,Wtlist,0 / 14 / (2),90478  THE 133 1,Acting I: Fundamentals,4,11:00-12:15P,TR,203ELY AUD,D Charles,,Preference given to THE Major/Minor
 Theatre Arts & Dance,Open,1 / 14 / (0),90479  THE 136 1,Voice & Speech I: Free Voice,4,11:00-11:50A,MWF,ASC 109,E Zivot,,Suitable for non-majors
 Theatre Arts & Dance,Open,4 / 12 / (0),90480  THE 201 1,Script Analysis,4,10:00-10:50A,MWF,KMC 1,M DiQuattro,,Suitable for non-majors
 Theatre Arts & Dance,Open,6 / 14 / (0),90481  THE 204 1,Musicianship for Actors,4,1 :00-2 :15P,MW,DANCE 1,J Bailey,,
@@ -619,6 +739,7 @@ Theatre Arts & Dance,Open,1 / 14 / (0),90486  THE 331 1,Acting III: Period Style
 Theatre Arts & Dance,Filled,-3 / 14 / (0),90487  THE 340 1,Rollins Improv Players Lab,2,12:00-1 :50P,F,203ELY AUD,D Charles,,Prereqs: audition; instructor consent required
 Theatre Arts & Dance,Filled,0 / 20 / (0),90488  THE 341 1,History of the Theatre I,4,11:00-12:15P,TR,KMC 1,M DiQuattro,,Suitable for non-majors
 Theatre Arts & Dance,Open,15 / 20 / (0),90489  THE 350 1,Topic:Theatre Architecture,4,09:00-09:50A,MWF,ANNIE AUD,R Miller,,Fee: $60
+Theatre Arts & Dance,Cancelled,0 / 0 / (0),90490  THE 350 2,Topic: Solo Performance,4,TBA,TBA,,,,
 Theatre Arts & Dance,Open,11 / 12 / (0),90491  THE 391 1,Second Stage: In Production I,2,7 :00-10:00P,MTWRF,ANNIE AUD,L Cushman,,Course meets first half of the semester.
 Theatre Arts & Dance,Open,11 / 12 / (0),90869  THE 391 2,Second Stage: In Production I,2,7 :00-10:00P,MTWRF,ANNIE AUD,L Cushman,,Course meets second half of the semester.
 Theatre Arts & Dance,Filled,-15 / 12 / (0),90492  THE 418 1,Theatre Prod: Tech/Design,2,7 :00-10:00P,MTWRF,ANNIE AUD,K Griffin,,Fee: $25; register in department
@@ -631,23 +752,34 @@ Student Resource Center,Open,10 / 20 / (0),91060  INT 100 1,Learning Strategies 
 Student Resource Center,Open,6 / 20 / (0),91062  INT 100 2,Learning Strategies Seminar,1,4 :15-5 :00P,R,OLIN 104,T Griffin,,
 Student Resource Center,Filled,-1 / 25 / (0),91189  TWC 106 1,Intensive Peer Edu Training,1,TBA,TBA,,L Gordon,,
 Student Resource Center,Filled,-1 / 25 / (0),91190  TWC 111 1,Peer Educator Training,1,TBA,TBA,,L Gordon,,
+Student Resource Center,Wtlist,-1 / 22 / (1),90387   RFLA 100H 01,Thinking and Pondering,4,09:30-10:45A,TR,CSS 232,D Wellman,,Theme: Enduring Questions
+Student Resource Center,Wtlist,0 / 22 / (5),90388   RFLA 200A 01,One Hit Wonders,4,08:00-09:15A,TR,KEENE 101,C Archard,,Prereq: RFLA 100; Theme: Cultural Collision
 Student Resource Center,Open,2 / 14 / (0),90390   RFLA 200A 03,Conceptual Docu Prac_CE,4,08:00-10:45A,T,CFAC 103,D Roe,,Prereq: RFLA 100; Themes: Innovation and Identity; Fee: $50; CE course; AAAS elective.
 Student Resource Center,Filled,0 / 22 / (0),90391   RFLA 200A 04,The Ethics of Arthur Miller,4,12:00-12:50P,MWF,BEAL 2,E Zivot,ECMP,"Prereq: RFLA 100; Themes: Identity, Enduring Questions"
 Student Resource Center,Filled,0 / 22 / (0),90392   RFLA 200A 05,Ethical Identity:Theater/Film,4,09:30-10:45A,TR,OLIN 319,L Cushman,,Prereq: RFLA 100; Theme: Enduring Questions
 Student Resource Center,Open,5 / 12 / (0),90393   RFLA 200A 06,The Power of Print_CE,4,09:30-12:15P,TR,CFAC 107,R Simmons,,"Prereq: RFLA 100; Themes:  Innovation and Identity, CE course; Fee: $50"
+Student Resource Center,Wtlist,0 / 22 / (8),90394   RFLA 200A 07,Global Popular Music,4,12:00-12:50P,MWF,KEENE 101,R Witmer,,"Prereq: RFLA 100; Themes:  Identity, Cultural Collision"
 Student Resource Center,Open,3 / 22 / (0),90395   RFLA 200A 08,Travel Lit:Culture Shock,4,12:00-12:50P,MWF,SULLV HSE,M DiQuattro,,"Prereq: RFLA 100; Fee: $125; Themes: Identity, Cultural Collision"
+Student Resource Center,Wtlist,-1 / 22 / (2),90396   RFLA 200A 09,Literary Sportswriting,4,09:30-10:45A,TR,LODGE REEVES,D Paul,,Prereq: RFLA 100; Theme: Cultural Collision
 Student Resource Center,Filled,0 / 12 / (0),90834   RFLA 200A 10,"Theater, Creativity, Soc Chng",4,08:00-09:15A,TR,203ELY AUD,N Garzon,,Prereq: RFLA 100; Identity; Enduring Questions
 Student Resource Center,Open,5 / 22 / (0),90862   RFLA 200A 11,Peacebuilding Through Theatre,4,12:00-12:50P,MWF,BUSH 308,H Cooperman,,Prereq: RFLA 100
 Student Resource Center,Filled,0 / 17 / (0),90397   RFLA 200C 01,The Immigrant Experience,4,09:30-10:45A,TR,CSS 118,S Gonzalez Guittar,,"Prereq: RFLA 100; Theme: Cultural Collision; SOC elective, LACS elective"
+Student Resource Center,Wtlist,0 / 22 / (9),90398   RFLA 200C 02,Human Comm:Body Lang,4,12:00-12:50P,MWF,CSS 170,J Hammonds,,"Prereq: RFLA 100; Themes: Identity, Enduring Questions; counts as an elective in the Communication Major"
+Student Resource Center,Wtlist,0 / 22 / (4),90399   RFLA 200C 04,Psychology of Stress,4,09:30-10:45A,TR,BUSH 208,A Luchner,,"Prereq: RFLA 100; Themes: Identity, Enduring Questions"
 Student Resource Center,Open,1 / 22 / (0),90400   RFLA 200C 05,Rise Fall Democracy,4,12:00-12:50P,MWF,CSS 230,D Boniface,,"Prereq: RFLA 100; Themes: Identity, Enduring Questions; counts as an elective for POL Major"
 Student Resource Center,Open,1 / 22 / (0),90401   RFLA 200C 06,Identities/Conflict: the 1960s,4,09:30-10:45A,TR,BEAL 2,L Poole,,"Prereq: RFLA 100; Themes: Identity, Cultural Collision"
 Student Resource Center,Filled,0 / 22 / (0),90402   RFLA 200C 07,Fantastic Archaeology,4,09:30-10:45A,TR,CSS 100,Z Gilmore,,"Prereq: RFLA 100; Themes: Cultural Collision, Enduring Questions"
 Student Resource Center,Filled,-3 / 15 / (0),90690   RFLA 200C 09,Sport in Perspective,4,08:00-09:15A,TR,BOAT 1,V Melograno,,Prereq: RFLA 100; Theme: Cultural Collisions
+Student Resource Center,Wtlist,-4 / 15 / (1),90689   RFLA 200C 10,Sport in Perspective,4,09:30-10:45A,TR,BOAT 1,V Melograno,,Prereq: RFLA 100; Theme: Cultural Collisions
 Student Resource Center,Open,1 / 22 / (0),90860   RFLA 200C 11,Political Economics on YouTube,4,09:30-10:45A,TR,BUSH 176,B Balak,,Prereq: RFLA 100; Cultural Collision; Identity
+Student Resource Center,Wtlist,1 / 22 / (1),90404   RFLA 200H 01,Memoir as Literature,4,09:30-10:45A,TR,ORLAN 205,A Zimmermann,,"Prereq: RFLA 100; Themes: Cultural Collision, Enduring Questions"
 Student Resource Center,Filled,0 / 18 / (0),90406   RFLA 200H 02,Body Snatchers:Lit & Medicine,4,09:30-10:45A,TR,ORLAN 113,E Russell,,"Prereq: RFLA 100; Themes: Innovation, Enduring Questions"
 Student Resource Center,Filled,0 / 22 / (0),90407   RFLA 200H 03,Transcultural Competence,4,09:30-10:45A,TR,BUSH 164,E Framson,,Prereq: RFLA 100; Theme: Cultural Collisions
+Student Resource Center,Wtlist,-2 / 18 / (7),90408   RFLA 200H 04,Breaking Bad & American Dream,4,09:30-10:45A,TR,ORLAN 215,J Jones,ECMP,"Prereq: RFLA 100; Themes: Identity, Enduring Questions"
 Student Resource Center,Filled,0 / 22 / (0),90409   RFLA 200H 05,Queered Landscapes,4,09:30-10:45A,TR,ORLAN 115,J Driggers,,Prereq: RFLA 100; Theme: Identity
+Student Resource Center,Cancelled,0 / 0 / (0),90410   RFLA 200H 06,Literature & Film,4,TBA,TBA,,,,"Prereq: RFLA 100; Themes: Cultural Collisions, Environments"
 Student Resource Center,Filled,0 / 18 / (0),90411   RFLA 200H 07,"Disability, Body, & Identity",4,08:00-09:15A,TR,BUSH 228,S Coffman-Rosen,,"Prereq: RFLA 100; Themes: Identity, Cultural Collision; Counts as an elective in the CMC Major"
+Student Resource Center,Wtlist,1 / 22 / (2),90412   RFLA 200H 08,Media & Violence,4,09:30-10:45A,TR,CSS 226,S Schoen,,"Prereq: RFLA 100; Themes: Identity, Enduring Questions; SWAG elective; CMC elective"
 Student Resource Center,Filled,-1 / 16 / (0),90413   RFLA 200H 09,Spanish Identity via Lens,4,09:30-10:45A,TR,HAUCK 111,A Prieto-Calixto,,"Prereq: RFLA 100; Themes: Identity, Cultural Collisions"
 Student Resource Center,Filled,-2 / 22 / (0),90405   RFLA 200H 10,Mid East Societies & Identity,4,12:00-12:50P,MWF,FAIRBK 116,A Aloush,,Prereq: RFLA 100; Counts toward the MENA Minor; JWS elective: SWAG elective; INB elective with permission
 Student Resource Center,Open,1 / 22 / (0),90832   RFLA 200H 11,Mid East Societies & Identity,4,09:30-10:45A,TR,FAIRBK 116,A Aloush,,Prereq: RFLA 100; Identity; MENA elective
@@ -667,5 +799,24 @@ Student Resource Center,Filled,0 / 22 / (0),90418   RFLA 200S 05,Ecology of Flor
 12:00-12:50P","T      
 MWF","BUSH 101
 BUSH 210",P Stephenson,,"Prereq: RFLA 100; Themes: Cultural Collisions, Environments; Saturday labs required."
+Student Resource Center,Wtlist,0 / 18 / (8),90419   RFLA 200S 06,Human-Animal Interactions,6,"08:00-09:15A
+09:30-10:45A","TR     
+TR","BUSH 302
+BUSH 302",R Yankelevitz,,Prereq: RFLA 100
+Student Resource Center,Wtlist,0 / 22 / (4),90420   RFLA 200S 07,Identity & the Social Self,6,"12:00-12:50P
+1 :00-3 :30P","MWF    
+F","BUSH 228
+BUSH 228",S Woodward,,Prereq: RFLA 100; Theme: Identity
+Student Resource Center,Wtlist,-2 / 20 / (2),90703   RFLA 300 01,Social Justice and Ethics,4,12:00-12:50P,MWF,CSS 134,J Maskivker,ECMP,"One 100-level and at least two 200-level Neighborhood courses, MCMP and WCMP competencies. FCMP and third 200-level neighborhood course may be taken concurrently."
+Student Resource Center,Wtlist,-2 / 16 / (6),90422   RFLA 300 02,Performance of Modern Ritual,4,09:30-10:45A,TR,CSS 230,G Cavenaugh,,"One 100-level and at least two 200-level Neighborhood courses, MCMP and WCMP competencies. FCMP and third 200-level neighborhood course may be taken concurrently. Themes: Identity, Enduring Questions"
+Student Resource Center,Wtlist,0 / 20 / (7),90423   RFLA 300 03,Racial Fictions,4,09:30-10:45A,TR,OLIN VAN HOUTEN,C Littler,ECMP,"One 100-level and at least two 200-level Neighborhood courses, MCMP and WCMP competencies. FCMP and third 200-level neighborhood course may be taken concurrently. Themes: Identity, Environments"
+Student Resource Center,Wtlist,-3 / 18 / (5),90424   RFLA 300 04,Surviving the 1960s,4,09:30-10:45A,TR,ORLAN 213,M O'Sullivan,,"One 100-level and at least two 200-level Neighborhood courses, MCMP and WCMP competencies. FCMP and third 200-level neighborhood course may be taken concurrently. Themes: Identity, Cultural Collision"
 Student Resource Center,Open,6 / 20 / (0),90425   RFLA 300 05,Music & Politics: the Americas,4,08:00-09:15A,TR,KEENE 103,R Witmer,ECMP,"One 100-level and at least two 200-level Neighborhood courses, MCMP and WCMP competencies. FCMP and third 200-level neighborhood course may be taken concurrently. Themes: Identity, Cultural Collision"
+Student Resource Center,Wtlist,1 / 20 / (2),90426   RFLA 300 06,Music & Politics: the Americas,4,09:30-10:45A,TR,KEENE 103,R Witmer,ECMP,"One 100-level and at least two 200-level Neighborhood courses, MCMP and WCMP competencies. FCMP and third 200-level neighborhood course may be taken concurrently. Themes: Identity, Cultural Collision"
 Student Resource Center,Filled,0 / 18 / (0),90427   RFLA 300 07,Practicing Social Justice_CE,4,09:30-10:45A,TR,BUSH 201,"J Cavenaugh                                                 , M Hein",,"One 100-level and at least two 200-level Neighborhood courses, MCMP and WCMP competencies. FCMP and third 200-level neighborhood course may be taken concurrently. Themes: Identity, Cultural Collision; CE course"
+Student Resource Center,Wtlist,0 / 12 / (1),90428   RFLA 300 08,Community Art & Activism_CE,4,09:30-10:45A,TR,203ELY AUD,N Garzon,,"One 100-level and at least two 200-level Neighborhood courses, MCMP and WCMP competencies. FCMP and third 200-level neighborhood course may be taken concurrently. Themes: Innovation, Enduring Questions, CE course"
+Student Resource Center,Wtlist,-4 / 20 / (3),90421   RFLA 300 10,Social Choice Mathematics,4,"12:00-12:50P
+12:00-12:50P","MW     
+F","BUSH 201
+BUSH 301",S Boyd,,"One 100-level and at least two 200-level Neighborhood courses, MCMP and WCMP competencies. FCMP and third 200-level neighborhood course may be taken concurrently. Themes: Cultural Collisions, Enduring Questions"
+Student Resource Center,Wtlist,-5 / 18 / (2),90687   RFLA 300 11,Technology and Human Flourishi,4,09:30-10:45A,TR,CSS 134,D DiQuattro,,"One 100-level and at least two 200-level Neighborhood courses, MCMP and WCMP competencies. FCMP and third 200-level neighborhood course may be taken concurrently. Themes: Innovation, Cultural Collisions"

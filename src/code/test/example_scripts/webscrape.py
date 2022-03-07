@@ -66,7 +66,7 @@ def parseData(file):
         if element.has_attr("class") and element["class"][0] == "hdrDept":
             department = element.text.strip()
 
-        elif (element.text.strip() == "Filled" or element.text.strip() == "Open") and department != "":
+        elif (element.text.strip() == "Filled" or element.text.strip() == "Open" or element.text.strip() == "Cancelled" or element.text.strip() == "Wtlist") and department != "":
             data_row.append(department)
             data_row.append(element.text.strip())
             counter = 1
@@ -113,5 +113,4 @@ def createCSVData():
     csv_file.close()
 
 if __name__ == "__main__":
-
     createCSVData()
