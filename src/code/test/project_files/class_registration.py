@@ -59,10 +59,10 @@ class Registration:
     #####################################################################################################################################################################################
 
     def print_course_information(self):
-        print("term code: ", self.get_term_code())
-        print("crn key: ", self.get_crn_key())
-        print("subject code: ", self.get_subject_code())
-        print("course number: ", self.get_course_number())
-        print("section number: ", self.get_section_number())
-        print("credit hours: ", self.get_credit_hours())
-        print("competency: ", self.get_competency())
+        print("term code: ", type(self.get_term_code()))
+        print("crn key: ", type(self.get_crn_key()))
+        print("subject code: ", type(self.get_subject_code()))
+        print("course number: ", type(self.get_course_number()))
+        print("section number: ", type(self.get_section_number()))
+        print("credit hours: ", type(self.get_credit_hours()))
+        print("competency: ", type(self.get_competency()))

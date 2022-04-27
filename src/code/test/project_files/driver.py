@@ -70,9 +70,10 @@ def create_class_registration_objects(data):
         if reg not in registration_dict:
             registration_dict[reg.get_crn_key(),reg.get_term_code()] = reg
 
-    for item in not_found_class_list:
-        print(item)
+    # for item in not_found_class_list:
+    #     print(item)
 
+    reg.print_course_information()
     return registration_dict
 
 def create_student_objects(data, startyear, endyear):
@@ -325,12 +326,12 @@ def calculate_dropped_classes(files, startyear, endyear):
     plt.figure(0)
     counts, edges, bars = plt.hist(dropped_class_ratio, bins=20)
     plt.bar_label(bars)
-    plt.xlabel("Percentage of dropped classes")
+    plt.xlabel("Percentage of removed classes")
     plt.ylabel("Number of students")
     if startyear != endyear:
-        plt.title("Number of dropped classes for: " + str(startyear) + "-" + str(endyear))
+        plt.title("Percentage of removed classes for: " + str(startyear) + "-" + str(endyear))
     else:
-        plt.title("Number of dropped classes for: " + str(startyear))
+        plt.title("Percentage of removed classes for: " + str(startyear))
 
     #plt.legend(loc="upper left", prop={"size": "10"})
     if startyear == endyear:
@@ -453,6 +454,8 @@ def calculate_dropped_class_competency(files, startyear, endyear):
 
         added_classes_dict[code] += 1
 
+    labels.sort()
+
     for label in labels:
         yaxis_dropped.append(dropped_classes_dict[label])
         yaxis_added.append(added_classes_dict[label])
@@ -462,7 +465,7 @@ def calculate_dropped_class_competency(files, startyear, endyear):
     dropped_bars = plt.bar(np.arange(len(labels)) - 0.2, yaxis_dropped, 0.4, label = "Dropped Classes")
     added_bars = plt.bar(np.arange(len(labels)) + 0.2, yaxis_added, 0.4, label= "Added Classes")
 
-    plt.xticks(np.arange(len(labels)), labels, rotation=90)
+    plt.xticks(np.arange(len(labels)), labels, rotation=50, fontsize=6)
     plt.xlabel("Competency")
     plt.ylabel("Number of Students")
     if startyear != endyear:
