@@ -60,7 +60,7 @@ class Student:
         
         return num_classes_dropped
 
-    def calculate_faculity_chosen_classes(self, rcc_analysis):
+    def calculate_faculty_chosen_classes(self, rcc_analysis):
 
         registration_classes = self.registration_classes.copy()
         initial_classes = self.initial_classes.copy()

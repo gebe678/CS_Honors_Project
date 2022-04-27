@@ -73,7 +73,6 @@ def create_class_registration_objects(data):
     # for item in not_found_class_list:
     #     print(item)
 
-    reg.print_course_information()
     return registration_dict
 
 def create_student_objects(data, startyear, endyear):
@@ -133,12 +132,12 @@ def create_student_objects(data, startyear, endyear):
 
             # remove all classes that have less than 2 credit hours from the initial classes
             for course in initial_classes:
-                if str(course.get_credit_hours()).isdigit() and int(course.get_credit_hours()) < 4 and course in initial_classes:
+                if course.get_credit_hours() != "NaN" and int(course.get_credit_hours()) < 4 and course in initial_classes:
                     initial_classes.remove(course)
             
             # remove all classes that have less than 2 credit hours from the registered classes
             for course in registered_classes:
-                if course.get_credit_hours != "NaN" and int(course.get_credit_hours()) < 4 and course in registered_classes:
+                if course.get_credit_hours() != "NaN" and int(course.get_credit_hours()) < 4 and course in registered_classes:
                     registered_classes.remove(course)
 
             # add revelant course information to the student object
@@ -167,8 +166,8 @@ def calculate_class_percentages(files, startyear, endyear):
     dropped_classes_list  = []
     kept_classes_list_rcc = []
     kept_classes_list_no_rcc = []
-    faculity_chosen_class_percentage = []
-    faculity_chosen_class_percentage_no_rcc = []
+    faculty_chosen_class_percentage = []
+    faculty_chosen_class_percentage_no_rcc = []
     students_dropped_classes = 0
     total_students = len(students)
 
@@ -182,17 +181,17 @@ def calculate_class_percentages(files, startyear, endyear):
         # calculate number of kept classes percentage without rcc
         kept_classes_no_rcc = student.calculate_kept_class_percentage(False)
 
-        # calculate number of faculity chosen class percentage with rcc
-        faculity_chosen_class = student.calculate_faculity_chosen_classes(True)
+        # calculate number of faculty chosen class percentage with rcc
+        faculty_chosen_class = student.calculate_faculty_chosen_classes(True)
 
-        # calculate number of faculity chosen class percentage without rcc
-        faculity_chosen_class_no_rcc = student.calculate_faculity_chosen_classes(False)
+        # calculate number of faculty chosen class percentage without rcc
+        faculty_chosen_class_no_rcc = student.calculate_faculty_chosen_classes(False)
 
         dropped_classes_list.append(dropped_classes)
         kept_classes_list_rcc.append(kept_classes_rcc)
         kept_classes_list_no_rcc.append(kept_classes_no_rcc)
-        faculity_chosen_class_percentage.append(faculity_chosen_class)
-        faculity_chosen_class_percentage_no_rcc.append(faculity_chosen_class_no_rcc)
+        faculty_chosen_class_percentage.append(faculty_chosen_class)
+        faculty_chosen_class_percentage_no_rcc.append(faculty_chosen_class_no_rcc)
 
         if dropped_classes > 0:
             students_dropped_classes += 1
@@ -202,8 +201,8 @@ def calculate_class_percentages(files, startyear, endyear):
     print("dropped class percentage numbers: ", "num students dropped classes: ", students_dropped_classes, " total students: ", total_students)
     print("kept classes percentage with RCC ", statistics.mean(kept_classes_list_rcc))
     print("kept classes percentage without RCC ", statistics.mean(kept_classes_list_no_rcc))
-    print("Faculity chosen class percentage with RCC: ", statistics.mean(faculity_chosen_class_percentage))
-    print("Faculity chosen class percentage without RCC: ", statistics.mean(faculity_chosen_class_percentage_no_rcc))
+    print("faculty chosen class percentage with RCC: ", statistics.mean(faculty_chosen_class_percentage))
+    print("faculty chosen class percentage without RCC: ", statistics.mean(faculty_chosen_class_percentage_no_rcc))
 
     # create histograms for the data
     # kept class list percentage histogram
@@ -238,13 +237,13 @@ def calculate_class_percentages(files, startyear, endyear):
 
     # # pre schedule change histogram
     # plt.figure(2)
-    # plt.hist(faculity_chosen_class_percentage, bins=20)
-    # plt.xlabel("Percentage of faculity chosen classes")
+    # plt.hist(faculty_chosen_class_percentage, bins=20)
+    # plt.xlabel("Percentage of faculty chosen classes")
     # plt.ylabel("Number of students")
     # if startyear != endyear:
-    #     plt.title("Percentage of faculity chosen classes for: " + str(startyear) + "-" + str(endyear))
+    #     plt.title("Percentage of faculty chosen classes for: " + str(startyear) + "-" + str(endyear))
     # else:
-    #     plt.title("Percentage of faculity chosen classes for: " + str(startyear))
+    #     plt.title("Percentage of faculty chosen classes for: " + str(startyear))
 
     # #plt.legend(loc="upper left", prop={"size": "10"})
     # if startyear == endyear:
@@ -296,7 +295,7 @@ def calculate_credit_hours(files, startyear, endyear):
         plt.bar_label(bar, fontsize=5)
     plt.legend(loc="upper left", prop={"size": "10"})
     if startyear == endyear:
-        plt.ylim(0,360)
+        plt.ylim(0,400)
     plt.show()
     #plt.savefig("credit_hours_post_hist.pdf", bbox_inches="tight")
 
