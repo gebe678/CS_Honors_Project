@@ -80,7 +80,7 @@ def main():
     #creditHourButton.bind("<Button-1>", runCreditHours)
 
     # create the dropped class button
-    droppedClassesButton = tk.Button(master=buttonFrame, text="Calculate Dropped Classes", width=30, command=lambda: runDroppedClasses(startYearVar.get(), endYearVar.get()))
+    droppedClassesButton = tk.Button(master=buttonFrame, text="Calculate Faculty Schedule Changes", width=30, command=lambda: runDroppedClasses(startYearVar.get(), endYearVar.get()))
     droppedClassesButton.grid(row=2, column=0)
     #droppedClassesButton.bind("<Button-1>", runDroppedClasses)
 

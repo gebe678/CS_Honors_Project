@@ -453,6 +453,8 @@ def calculate_dropped_class_competency(files, startyear, endyear):
 
         added_classes_dict[code] += 1
 
+    # Uncomment to remove classes without a competency from the analysis
+    # labels.remove("NONE")
     labels.sort()
 
     for label in labels:
